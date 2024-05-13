@@ -1,0 +1,14 @@
+@media screen and (max-width: 575px) {
+  #the-header-icon-list .social-item {
+    width: 6vw;
+    height: 6vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .responsive .site-header.layout-1 .header-container .top-header {
+    padding: 2vh 0;
+  }
+  .responsive .site-header.layout-1 .header-container .wrap-content-header {
+    height: 4vh;
+  }
+}

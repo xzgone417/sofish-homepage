@@ -1,0 +1,212 @@
+.bp-element-posts.layout-list-2 .wrap-element .heading-post .title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  word-break: break-word;
+  padding-left: 15px;
+  position: relative;
+  margin-top: -6px;
+  margin-bottom: 21px;
+}
+.bp-element-posts.layout-list-2 .wrap-element .heading-post .title::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: calc(85%);
+  background-color: #e40914;
+  position: absolute;
+  top: 7px;
+  left: 0;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item:last-child {
+  margin-bottom: 0;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item .pic {
+  display: block;
+  width: 89px;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item1 .pic {
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item1 .pic a {
+  width: 100%;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item1 .pic a img {
+  width: 100%;
+  height: 200px;
+  padding-bottom: 10px;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item .pic img {
+  width: 100%;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item .text {
+  width: calc(-9%);
+  align-self: center;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item1 .text {
+  display: flex;
+  width: 100%;
+  align-self: center;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item .text .title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #1e1e1e;
+  word-break: break-word;
+  margin-bottom: 7px;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item1 .text .title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #1e1e1e;
+  word-break: break-word;
+  margin-bottom: 7px;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item .text .title a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #1e1e1e;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item1 .text .title a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #1e1e1e;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item .text .title a:hover {
+  color: #e40914;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item1 .text .title a:hover {
+  color: #e40914;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item .text .info {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.85;
+  color: #6e6e6e;
+  word-break: break-word;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item1 .text .info {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.85;
+  color: #6e6e6e;
+  word-break: break-word;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item .text .price {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.85;
+  color: #e40914;
+  word-break: break-word;
+}
+.bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item1 .text .price {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.85;
+  color: #e40914;
+  word-break: break-word;
+}
+.bp-element-posts.vblog-layout-list-sidebar-2 .wrap-element .title-post {
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.666666;
+  color: #1f1f1f;
+  text-align: center;
+  word-break: break-word;
+  border: 1px dashed #cfcfcf;
+  padding: 10px 15px;
+  position: relative;
+  margin-bottom: 35px;
+}
+.bp-element-posts.vblog-layout-list-sidebar-2 .wrap-element .title-post::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-left: 1px dashed #cfcfcf;
+  border-bottom: 1px dashed #cfcfcf;
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: -5px;
+  left: calc(45%);
+}
+.bp-element-posts.vblog-layout-list-sidebar-2 .wrap-element .list-posts .post-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.bp-element-posts.vblog-layout-list-sidebar-2 .wrap-element .list-posts .post-item:last-child {
+  margin-bottom: 0;
+}
+.bp-element-posts.vblog-layout-list-sidebar-2 .wrap-element .list-posts .post-item .pic {
+  display: block;
+  width: 93px;
+}
+.bp-element-posts.vblog-layout-list-sidebar-2 .wrap-element .list-posts .post-item .pic img {
+  width: 100%;
+}
+.bp-element-posts.vblog-layout-list-sidebar-2 .wrap-element .list-posts .post-item .text {
+  width: calc(-13%);
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bp-element-posts.vblog-layout-list-sidebar-2 .wrap-element .list-posts .post-item .text .title {
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.444444;
+  color: #1f1f1f;
+  word-break: break-word;
+  margin-bottom: 11px;
+}
+.bp-element-posts.vblog-layout-list-sidebar-2 .wrap-element .list-posts .post-item .text .title a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #1f1f1f;
+}
+.bp-element-posts.vblog-layout-list-sidebar-2 .wrap-element .list-posts .post-item .text .title a:hover {
+  color: #fa777c;
+}
+.bp-element-posts.vblog-layout-list-sidebar-2 .wrap-element .list-posts .post-item .text .info {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #6e6e6e;
+  text-transform: uppercase;
+  word-break: break-word;
+}
