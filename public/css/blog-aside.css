@@ -14,7 +14,7 @@
   content: "";
   display: block;
   width: 3px;
-  height: calc(85%);
+  height: calc(100% - 15px);
   background-color: #e40914;
   position: absolute;
   top: 7px;
@@ -58,7 +58,7 @@
   width: 100%;
 }
 .bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item .text {
-  width: calc(-9%);
+  width: calc(100% - 89px - 20px);
   align-self: center;
 }
 .bp-element-posts.layout-list-2 .wrap-element .list-posts .post-item1 .text {
@@ -157,7 +157,7 @@
   transform: rotate(-45deg);
   position: absolute;
   bottom: -5px;
-  left: calc(45%);
+  left: calc(50% - 5px);
 }
 .bp-element-posts.vblog-layout-list-sidebar-2 .wrap-element .list-posts .post-item {
   display: flex;
@@ -177,7 +177,7 @@
   width: 100%;
 }
 .bp-element-posts.vblog-layout-list-sidebar-2 .wrap-element .list-posts .post-item .text {
-  width: calc(-13%);
+  width: calc(100% - 93px - 20px);
   align-self: stretch;
   display: flex;
   flex-direction: column;

@@ -142,10 +142,10 @@
 .bl-blog-detail .text-blog-detail .wrap-share-blog .share .socials .item-social:hover {
   background: #e40914;
   border-color: #e40914;
-  color: #ffffff;
+  color: #fff;
 }
 .bl-blog-detail .text-blog-detail .content-blog {
-  width: calc(-5%);
+  width: calc(100% - 85px - 20px);
   margin-top: -8px;
 }
 .bl-blog-detail .text-blog-detail .content-blog > p {
@@ -246,7 +246,7 @@
   color: #e40914;
 }
 .bl-blog-detail .text-blog-detail .content-blog .author-blog .text-author {
-  width: calc(-74%);
+  width: calc(100% - 147px - 27px);
 }
 .bl-blog-detail .text-blog-detail .content-blog .author-blog .text-author .name-author {
   font-weight: 500;
@@ -319,10 +319,10 @@
 .bl-blog-detail .text-blog-detail .content-blog .navigate-blog .navi-item .navi-arrow:hover {
   background: #e40914;
   border-color: #e40914;
-  color: #ffffff;
+  color: #fff;
 }
 .bl-blog-detail .text-blog-detail .content-blog .navigate-blog .navi-item .navi-text {
-  width: calc(44%);
+  width: calc(100% - 56px);
   padding: 0 25px;
 }
 .bl-blog-detail .text-blog-detail .content-blog .navigate-blog .navi-item .navi-text .name-navi {
@@ -401,7 +401,7 @@
   border-radius: 50%;
 }
 .bl-blog-detail .text-blog-detail .content-blog .comments-area .list-comments .comment-list .comment .content-comment {
-  width: calc(-14%);
+  width: calc(100% - 84px - 30px);
   margin-top: -5px;
   margin-bottom: 32px;
 }
@@ -463,7 +463,7 @@
 }
 .bl-blog-detail .text-blog-detail .content-blog .comments-area .list-comments .comment-list .children {
   width: 100%;
-  padding-left: calc(114px);
+  padding-left: calc(84px + 30px);
   border-top: 2px dotted #e5e5e5;
 }
 .bl-blog-detail .text-blog-detail .content-blog .leave-comment .title-leave-cmt {

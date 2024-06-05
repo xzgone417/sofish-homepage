@@ -89,7 +89,7 @@
   top: 0;
   left: 0;
   background-color: #000;
-  opacity: .15;
+  opacity: 0.15;
   transition: all 0.3s;
 }
 .bp-element-video-box.vblog-layout-popup-1 .wrap-element .content {
@@ -233,7 +233,7 @@
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(204, 204, 204, 0.4);
-  transition: all .2s;
+  transition: all 0.2s;
   margin: 3px;
 }
 .bp-element-icon-box.vblog-layout-2 .icon-box .content .description a i:hover {
@@ -269,7 +269,7 @@
   width: 100%;
   height: 108px;
   cursor: pointer;
-  opacity: .5;
+  opacity: 0.5;
   transition: all 0.3s;
 }
 .bp-element-brands.vblog-layout-slider-1 .wrap-element .brand-item img:hover {

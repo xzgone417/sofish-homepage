@@ -4,7 +4,7 @@
   flex-wrap: wrap;
 }
 .contact-form .wrap-input {
-  width: calc(20%);
+  width: calc((100% - 40px) / 3);
   margin-bottom: 20px;
 }
 .contact-form .wrap-input.full-width {

@@ -51,6 +51,9 @@ router.get("/single-blog-05", (req, res) => {
 router.get("/single-blog-06", (req, res) => {
   res.render("blog/single-blog-06.html");
 });
+router.get("/test", (req, res) => {
+  res.render("model/test.html");
+});
 // router.get("/list-authors", (req, res) => {
 //   res.render("list/list-authors.html");
 // });

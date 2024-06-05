@@ -97,16 +97,16 @@
   border-color: #fa777c;
 }
 .subscribe-form label input::-webkit-input-placeholder {
-  color: #aaaaaa;
+  color: #aaa;
 }
 .subscribe-form label input:-moz-placeholder {
-  color: #aaaaaa;
+  color: #aaa;
 }
 .subscribe-form label input::-moz-placeholder {
-  color: #aaaaaa;
+  color: #aaa;
 }
 .subscribe-form label input:-ms-input-placeholder {
-  color: #aaaaaa;
+  color: #aaa;
 }
 .subscribe-form button {
   font-family: Playfair Display;
@@ -125,7 +125,7 @@
   height: 52px;
   border-radius: 26px;
   padding: 0 56px;
-  transition: all .2s;
+  transition: all 0.2s;
   margin: 5px;
 }
 .subscribe-form button:hover {
@@ -318,7 +318,7 @@
   font-style: italic;
   font-size: 16px;
   line-height: 1.625;
-  color: #111111;
+  color: #111;
 }
 .thim-form_submit-page .divline_submit-page {
   margin-bottom: 34px;
@@ -476,7 +476,7 @@
   width: 100%;
   height: 100%;
   background: #000;
-  opacity: .45;
+  opacity: 0.45;
   top: 0;
   left: 0;
   transition: all 0.3s;
@@ -529,7 +529,7 @@
   width: 100%;
   height: 100%;
   background: #000;
-  opacity: .2;
+  opacity: 0.2;
   top: 0;
   left: 0;
   transition: all 0.3s;
@@ -597,7 +597,7 @@
   width: 100%;
   height: 100%;
   background: #000;
-  opacity: .15;
+  opacity: 0.15;
   top: 0;
   left: 0;
   transition: all 0.3s;
@@ -659,8 +659,8 @@
 }
 .bp-element-image-box.vblog-layout-4 .wrap-element .content {
   position: absolute;
-  width: calc(76%);
-  height: calc(76%);
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
   top: 12px;
   left: 12px;
   border: 1px solid #fff;

@@ -26,7 +26,7 @@
 .loop-pagination .page-numbers.current {
   background: #e40914;
   border-color: #e40914;
-  color: #ffffff;
+  color: #fff;
 }
 .loop-pagination .page-numbers.next {
   font-weight: 500;
@@ -186,19 +186,19 @@
   display: block;
   position: absolute;
   z-index: 2;
-  width: calc(102%);
-  height: calc(102%);
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
   bottom: -1px;
   left: -1px;
   background: #000;
-  opacity: .3;
+  opacity: 0.3;
   transition: all 0.3s;
 }
 .blog-list.vblog-layout-1 .item-blog.video-item .media-item .pic .btn-play {
   position: absolute;
   z-index: 20;
-  top: calc(28%);
-  left: calc(31%);
+  top: calc(50% - 22px);
+  left: calc(50% - 19px);
   display: block;
   width: 38px;
   height: 44px;
@@ -307,8 +307,8 @@
   display: block;
   position: absolute;
   z-index: 2;
-  width: calc(102%);
-  height: calc(102%);
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
   bottom: -1px;
   left: -1px;
   background: #000;
@@ -324,7 +324,7 @@
   width: 84px;
 }
 .blog-list.vblog-layout-1 .item-blog.have-no-thumbnail .text-item {
-  width: calc(-14%);
+  width: calc(100% - 84px - 30px);
   margin-top: -6px;
 }
 .blog-list.vblog-layout-1 .item-blog.have-no-thumbnail.no-have-date .text-item {
@@ -446,7 +446,7 @@
   border-top: 1px dashed #d7d7d7;
   position: absolute;
   z-index: -1;
-  top: calc(49%);
+  top: calc(50% - 1px);
   left: 0;
 }
 .blog-list.vblog-layout-2 .item-blog .share .wrap-text .text {
@@ -485,10 +485,10 @@
 .blog-list.vblog-layout-2 .item-blog .share .socials .item-social:hover {
   border-color: #fa777c;
   background: #fa777c;
-  color: #ffffff;
+  color: #fff;
 }
 .blog-list.vblog-layout-2 .item-blog.feature-item {
-  width: calc(60%);
+  width: calc((100% - (1 * 40px)) / 1);
 }
 .blog-list.vblog-layout-2 .item-blog.feature-item::after {
   content: "";
@@ -531,19 +531,19 @@
   display: block;
   position: absolute;
   z-index: 2;
-  width: calc(102%);
-  height: calc(102%);
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
   bottom: -1px;
   left: -1px;
   background: #000;
-  opacity: .2;
+  opacity: 0.2;
   transition: all 0.3s;
 }
 .blog-list.vblog-layout-2 .item-blog.video-item .media-item .btn-play {
   position: absolute;
   z-index: 20;
-  top: calc(28%);
-  left: calc(31%);
+  top: calc(50% - 22px);
+  left: calc(50% - 19px);
   display: block;
   width: 38px;
   height: 44px;

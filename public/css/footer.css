@@ -20,7 +20,7 @@
   text-align: center;
 }
 .site-footer.layout-1 {
-  background: #111111;
+  background: #111;
 }
 .site-footer.layout-1 .footer-sidebars {
   padding-top: 100px;
@@ -65,7 +65,7 @@
   justify-content: space-between;
 }
 .yikes-easy-mc-form.comment-form .wrap-input {
-  width: calc(37.5%);
+  width: calc((100% - 25px) / 2);
   height: 50px;
   margin-bottom: 24px;
 }
@@ -164,7 +164,7 @@
   background: #e40914;
   height: 43px;
   padding: 0 15px;
-  transition: all .2s;
+  transition: all 0.2s;
   border-radius: 0;
   border: none;
   width: auto;
@@ -266,7 +266,7 @@
 .bp-element-social-links.vblog-layout-footer .wrap-element .social-item:hover {
   background: #e40914;
   border-color: #e40914;
-  color: #ffffff;
+  color: #fff;
 }
 .bp-element-social-links.vblog-layout-footer-2 .wrap-element {
   text-align: inherit;
@@ -312,7 +312,7 @@
 .bp-element-social-links.vblog-layout-footer-3 .wrap-element .social-item:hover {
   background: #fa777c;
   border-color: #fa777c;
-  color: #ffffff;
+  color: #fff;
 }
 .site-footer.layout-1 .footer-sidebars .widget_thim_layout_builder .bp-element-social-links {
   text-align: center;
@@ -355,7 +355,7 @@
   transition: all 0.2s;
 }
 .site-footer.layout-1 .copyright-area .copyright-text a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .site-footer.layout-2 .footer-sidebars {
   padding-top: 173px;
@@ -398,7 +398,7 @@
   transition: all 0.2s;
 }
 .site-footer.layout-2 .copyright-area .copyright-text a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .site-footer.layout-3 {
   background: #fdf8f6;
