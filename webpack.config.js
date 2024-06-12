@@ -14,14 +14,10 @@ artTemplate.defaults.extname = ".html";
 
 module.exports = {
   entry: {
-    // jquery: ["jquery"],
     ...entrys(),
   },
   output: {
     filename: "js/[name].js", // 输出到浏览器的文件名，可能与压缩后的文件名不同
-    // publicPath: "dist/public", // 输出文件的URL路径
-    // path: resolve(__dirname, "dist"), // 输出文件的目录
-    // libraryTarget: "umd", // 或者根据你的需求选择libraryTarget
     clean: true, // 在生成文件之前清空 output 目录
   },
   module: {
@@ -52,30 +48,36 @@ module.exports = {
           filename: "assets/fonts/[name][ext]",
         },
       },
+      {
+        test: /\.art$/,
+        use: ["art-template-loader"],
+      },
+      // {
+      //   test: /\.json$/,
+      //   type: 'javascript/auto'
+      // },
       // 匹配html页面，并提取内部资源文件
       {
         test: /\.html$/i,
         exclude: /node_modules/,
-        // use: [
-        // {
-        loader: "html-loader",
-        options: {
-          minimize: false, // 不压缩html内容
-          preprocessor: (content, loaderContext) => {
-            return artTemplate.compile(content)(htmlData);
+        use: [
+          {
+            loader: "html-loader",
+            options: {
+              minimize: false, // 不压缩html内容
+              preprocessor: (content, loaderContext) => {
+                return artTemplate.compile(content)(htmlData);
+              },
+            },
           },
-        },
-        // },
-        // {
-        //   loader: resolve(__dirname, "exclude-links-loader.js"),
-        //   options: {
-        //     minimize: false, // 不压缩html内容
-        //     preprocessor: (content, loaderContext) => {
-        //       return artTemplate.compile(content)(htmlData);
-        //     },
-        //   },
-        // },
-        // ],
+          // {
+          //   loader: "art-template-loader",
+          //   options: {
+          //     // 将art-template模板插入到id为'template'的<script>标签中
+          //     root: "#template",
+          //   },
+          // },
+        ],
       },
       // 将jquery暴露给全局对象（self、window 和 global）
       // {
@@ -87,22 +89,7 @@ module.exports = {
       // },
     ],
   },
-  // optimization: {
-  //   minimize: true,
-  //   minimizer: [
-  //     new TerserPlugin({
-  //       test: /\.js$/,
-  //       exclude: /\.min\.js$/,
-  //       // 这里使用正则表达式，匹配所有非".min.js"结尾的.js文件
-  //       // filename: "[name]..min.js",
-  //     }),
-  //   ],
-  // },
   plugins: [
-    // new webpack.ProvidePlugin({
-    //   $: "jquery",
-    //   jQuery: "jquery",
-    // }),
     ...staticHtmls(),
     // 提取css文件
     new MiniCssExtractPlugin({
@@ -116,7 +103,7 @@ module.exports = {
     },
   },
   performance: false, // 完全禁用大小限制
-  mode: "production",
+  mode: "development",
   devServer: {
     static: {
       // 指定服务运行目录
