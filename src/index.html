@@ -20,19 +20,7 @@
 <body class="responsive home-1">
   <div id="wrapper-container">
     {{include "./header.art"}}
-    <div id="app"></div>
-    {{include "./footer.art"}}
 
-    <div id="thim-preloading">
-      <div class="custom-image">
-        <img src="./assets/images/wave.gif" alt="Loading">
-      </div>
-    </div>
-  </div>
-  <div id="back-to-top" class="btn-back-to-top">
-    <i class="ion ion-ios-arrow-thin-up"></i>
-  </div>
-  <script type="text/template" id="template">
     <div id="main-content" style="background: #1e1e1e;">
       <div class="thim-banner_home-1">
         <div class="overlay-area"></div>
@@ -596,8 +584,18 @@
       </div>
 
     </div>
-  </script>
-  <script type="text/json" src="./json/games.json"></script>
+    <!-- 尾页 -->
+    {{include "./footer.art"}}
+
+    <div id="thim-preloading">
+      <div class="custom-image">
+        <img src="./assets/images/wave.gif" alt="Loading">
+      </div>
+    </div>
+  </div>
+  <div id="back-to-top" class="btn-back-to-top">
+    <i class="ion ion-ios-arrow-thin-up"></i>
+  </div>
   <script type="text/javascript" src="https://fl.sogamecdn.com/web/assets/js/libs/jquery/jquery.min.js"></script>
   <script type="text/javascript" src="https://fl.sogamecdn.com/web/assets/js/libs/bootstrap/popper.js"></script>
   <script type="text/javascript" src="https://fl.sogamecdn.com/web/assets/js/libs/bootstrap/bootstrap.min.js"></script>
