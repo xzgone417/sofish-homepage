@@ -3,6 +3,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const artTemplate = require("art-template");
 const { entrys, staticHtmls, watchHtmls } = require("./static.config");
 const htmlData = require("./html.data.json");
+const { jsonImport } = require("./src/json/data.js");
+// import jsonImport from "./src/json/data.js";
 // const path = require('path');
 const TerserPlugin = require("terser-webpack-plugin");
 // const webpack = require("webpack");
@@ -54,7 +56,14 @@ module.exports = {
       },
       // {
       //   test: /\.json$/,
-      //   type: 'javascript/auto'
+      //   use: "json-loader",
+      //   type: "javascript/auto",
+      // },
+      // // 添加规则来处理文件夹中的所有JSON文件
+      // {
+      //   test: /\/(path-to-your-folder)\/.*\.json$/,
+      //   use: "json-loader",
+      //   type: "javascript/auto",
       // },
       // 匹配html页面，并提取内部资源文件
       {
@@ -66,6 +75,9 @@ module.exports = {
             options: {
               minimize: false, // 不压缩html内容
               preprocessor: (content, loaderContext) => {
+                console.log(loaderContext, "1");
+                console.log(htmlData, "22222222222222");
+                console.log(jsonImport("index"), "3333333333");
                 return artTemplate.compile(content)(htmlData);
               },
             },
