@@ -1,0 +1,29 @@
+<div class="widget-area col-sm-9 col-md-8 col-lg-3 sticky-sidebar">
+  <aside class="widget widget_thim_layout_builder">
+    <div class="bp-element bp-element-posts layout-list-2">
+      <div class="wrap-element">
+        <div class="list-posts">
+          {{each aside_list item index}}
+          <div class="post-item1">
+            <div class="pic">
+              <a href="{{item.link}}">
+                <img src="{{item.img}}" alt="IMG">
+              </a>
+            </div>
+            <div class="text">
+              <h4 class="title">
+                <a href="{{item.link}}">
+                  {{item.title}}
+                </a>
+              </h4>
+            </div>
+            <div class="info">
+              {{item.date}}
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>

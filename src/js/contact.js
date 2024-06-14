@@ -2,12 +2,6 @@
     $(function () {
       thim_startertheme.contact();
     });
-    // $("#contact").click(function(){
-    //     thim_startertheme.contact();
-    // });
-    // $(window).load(function () {
-    //     thim_startertheme.load();
-    // });
     var thim_startertheme = {
       contact: function () {
         $("#contact").on("click", function () {

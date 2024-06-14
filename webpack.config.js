@@ -1,19 +1,19 @@
 const { resolve } = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const artTemplate = require("art-template");
-const { entrys, staticHtmls, watchHtmls } = require("./static.config");
-const htmlData = require("./html.data.json");
-const { jsonImport } = require("./src/json/data.js");
-// import jsonImport from "./src/json/data.js";
-// const path = require('path');
+const {
+  entrys,
+  staticHtmls,
+  watchHtmls,
+  jsonImport,
+} = require("./static.config");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
-// const webpack = require("webpack");
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
 // 指定art-template模板路径
 artTemplate.defaults.root = resolve(__dirname, "./src");
 // 指定模板名称
 artTemplate.defaults.extname = ".html";
-
 module.exports = {
   entry: {
     ...entrys(),
@@ -22,6 +22,7 @@ module.exports = {
     filename: "js/[name].js", // 输出到浏览器的文件名，可能与压缩后的文件名不同
     clean: true, // 在生成文件之前清空 output 目录
   },
+
   module: {
     rules: [
       // MiniCssExtractPlugin.loader 提取CSS为独立文件
@@ -54,17 +55,21 @@ module.exports = {
         test: /\.art$/,
         use: ["art-template-loader"],
       },
-      // {
-      //   test: /\.json$/,
-      //   use: "json-loader",
-      //   type: "javascript/auto",
-      // },
-      // // 添加规则来处理文件夹中的所有JSON文件
-      // {
-      //   test: /\/(path-to-your-folder)\/.*\.json$/,
-      //   use: "json-loader",
-      //   type: "javascript/auto",
-      // },
+      {
+        test: /\.json$/,
+        use: [
+          {
+            loader: "json-loader",
+          },
+          {
+            loader: "file-loader", // 或者 'url-loader'
+            options: {
+              name: "[name].[ext]",
+              outputPath: "assets/json/", // 输出目录
+            },
+          },
+        ],
+      },
       // 匹配html页面，并提取内部资源文件
       {
         test: /\.html$/i,
@@ -75,20 +80,11 @@ module.exports = {
             options: {
               minimize: false, // 不压缩html内容
               preprocessor: (content, loaderContext) => {
-                console.log(loaderContext, "1");
-                console.log(htmlData, "22222222222222");
-                console.log(jsonImport("index"), "3333333333");
-                return artTemplate.compile(content)(htmlData);
+                const one_jsonData = jsonImport(loaderContext.resourcePath);
+                return artTemplate.compile(content)(one_jsonData);
               },
             },
           },
-          // {
-          //   loader: "art-template-loader",
-          //   options: {
-          //     // 将art-template模板插入到id为'template'的<script>标签中
-          //     root: "#template",
-          //   },
-          // },
         ],
       },
       // 将jquery暴露给全局对象（self、window 和 global）
@@ -107,11 +103,15 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "css/[name].css", //输出文件
     }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: "public", to: "public" }],
+    }),
   ],
   resolve: {
     alias: {
       // 样式路径目录别名
       $css: resolve(__dirname, "src/css"),
+      $json: resolve(__dirname, "src/json"),
     },
   },
   performance: false, // 完全禁用大小限制
