@@ -68,11 +68,6 @@
                                     Games
                                 </a>
                             </li>
-                            <!-- <li class="menu-item-has-children">
-                                <a href="./about.html">
-                                    About
-                                </a>
-                            </li> -->
                             <li class="menu-item-has-children">
                                 <a href="./blogs.html">
                                     Blogs
@@ -86,7 +81,6 @@
                         </ul>
                     </nav>
                     <div class="menu-right">
-
 
                         <div class="bp-element-login-popup layout-1 show-icon">
                             <div class="login-links">

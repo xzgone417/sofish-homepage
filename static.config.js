@@ -17,52 +17,46 @@ const webScripts = [
 const htmls = [
   {
     name: "index.html",
-    template: "index.html",
     chunks: ["index"],
   },
   {
     name: "games.html",
-    template: "games.html",
     chunks: ["games"],
   },
   {
     name: "blogs.html",
-    template: "blogs.html",
     chunks: ["blogs"],
   },
   {
+    name: "contact.html",
+    chunks: ["contact"],
+  },
+  {
     name: "blogs-2.html",
-    template: "blogs-2.html",
     chunks: ["blogs"],
   },
   {
     name: "single-blog-01.html",
-    template: "single-blog-01.html",
     chunks: ["single-blog"],
   },
   {
     name: "single-blog-02.html",
-    template: "single-blog-02.html",
     chunks: ["single-blog"],
   },
   {
     name: "single-blog-03.html",
-    template: "single-blog-03.html",
     chunks: ["single-blog"],
   },
   {
     name: "single-blog-04.html",
-    template: "single-blog-04.html",
     chunks: ["single-blog"],
   },
   {
     name: "single-blog-05.html",
-    template: "single-blog-05.html",
     chunks: ["single-blog"],
   },
   {
     name: "single-blog-06.html",
-    template: "single-blog-06.html",
     chunks: ["single-blog"],
   },
 ];
@@ -84,18 +78,16 @@ module.exports = {
     htmls.map((item) => {
       return new HtmlWebpackPlugin({
         inject: "body",
-        template: path.resolve(__dirname, `./src/${item.template}`),
+        template: path.resolve(__dirname, `./src/${item.name}`),
         filename: item.name,
         chunks: ["common", "section", "media-style", ...item.chunks],
         minify: false,
-        // chunksSortMode: "auto",
-        // hash: true, // 添加hash到脚本标签，用于缓存破坏
         // scriptLoading: "blocking", // 将scriptLoading属性设置为'blocking'，这样生成的script标签就不会包含defer属性
       });
     }),
   // 监听热更html页面
   watchHtmls: () =>
-    htmls.map((item) => path.resolve(__dirname, `./src/${item.template}`)),
+    htmls.map((item) => path.resolve(__dirname, `./src/${item.name}`)),
   jsonImport: (fullPath) => {
     let jsonData = {};
     let fileNameWithExtension = path.basename(fullPath);
