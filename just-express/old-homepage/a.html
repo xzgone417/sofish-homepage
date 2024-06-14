@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>数字增长型跳动</title>
+</head>
+<body>
+<span id="counter">0</span>
+
+<script>
+    var counter = document.getElementById('counter');
+    var targetNumber = 100; // 目标数字
+    var duration = 2000; // 动画持续时间（毫秒）
+    var interval = 10; // 更新间隔时间（毫秒）
+    var step = Math.ceil(targetNumber / (duration / interval));
+    var currentNumber = 0;
+
+    var timer = setInterval(function() {
+        if (currentNumber >= targetNumber) {
+            clearInterval(timer);
+            return;
+        }
+
+        currentNumber += step;
+
+        // 防止数字超过目标值
+        if (currentNumber > targetNumber) {
+            currentNumber = targetNumber;
+        }
+
+        counter.innerText = currentNumber; // 更新数字显示
+    }, interval);
+</script>
+</body>
+</html>
