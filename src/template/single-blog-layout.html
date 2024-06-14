@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="../public/favicon.ico" />
+    {{block "head"}}
+    <title>SOFISH</title>
+    {{/block}}
+
+    {{block "css"}}
+    <link rel="stylesheet" type="text/css"
+        href="https://fl.sogamecdn.com/web/assets/css/libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://fl.sogamecdn.com/web/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://fl.sogamecdn.com/web/assets/fonts/ionicons-2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fl.sogamecdn.com/web/assets/css/libs/slick/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://fl.sogamecdn.com/web/assets/css/libs/magnific-popup/magnific-popup.min.css">
+    {{/block}}
+</head>
+
+<body>
+    {{block "content"}}
+    <div class="responsive home-2">
+        <div id="wrapper-container">
+            <div id="main-content">
+                <div class="content-area">
+                    <div class="page-title">
+                        <div class="main-top">
+                            <div class="overlay-top-header"></div>
+                            <div class="content container">
+                                <h1>
+                                    {{title.top}}
+                                </h1>
+                                <div class="wrap-breadcrumb">
+                                    <ul class="breadcrumbs">
+                                        <li>
+                                            <a href="./index.html">
+                                                {{title.left}}
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span class="breadcrum-icon">/</span>
+                                            {{title.right}}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site-content sidebar-right layout-1">
+                        <div class="container">
+                            <div class="row">
+                                <main class="site-main col-lg-9">
+                                    <div class="wrap-main-content">
+                                        <div class="bl-blog-detail">
+                                            <div class="head-blog">
+                                                <h2 class="title-blog-detail">
+                                                    {{single_blog.title}}
+                                                </h2>
+                                                <div class="info-blog-detail">
+                                                </div>
+                                            </div>
+                                            <div class="media-blog-detail">
+                                                <div class="pic">
+                                                    <img src="{{single_blog.img}}" alt="IMG">
+                                                </div>
+                                                <div class="date">
+                                                    <span class="number">{{single_blog.day}}</span>
+                                                    {{single_blog.month}}
+                                                </div>
+                                            </div>
+                                            <div class="text-blog-detail">
+                                                <div class="wrap-share-blog sticky-sidebar">
+                                                    <div class="share">
+                                                        <span class="namefield">
+                                                            Share
+                                                        </span>
+                                                        <span class="socials">
+                                                            <a href="javascript:;" class="item-social">
+                                                                <i class="ion ion-social-facebook"></i>
+                                                            </a>
+                                                            <a href="javascript:;" class="item-social">
+                                                                <i class="ion ion-social-twitter"></i>
+                                                            </a>
+                                                            <a href="javascript:;" class="item-social">
+                                                                <i class="ion ion-social-googleplus"></i>
+                                                            </a>
+                                                            <a href="javascript:;" class="item-social">
+                                                                <i class="ion ion-social-vimeo"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="content-blog">
+                                                    {{@ single_blog.content}}
+
+                                                    <div class="tags">
+                                                        <span class="name-field">Tags:</span>
+                                                        {{single_blog.tag}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </main>
+                                <!-- 右侧边栏 -->
+                                {{include "./blog-aside.art"}}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="thim-preloading">
+                <div class="custom-image">
+                    <img src="./assets/images/wave.gif" alt="Loading">
+                </div>
+            </div>
+        </div>
+        <div id="back-to-top" class="btn-back-to-top">
+            <i class="ion ion-ios-arrow-thin-up"></i>
+        </div>
+    </div>
+
+    {{/block}}
+
+
+    {{block "script"}}
+    <script type="text/javascript" src="https://fl.sogamecdn.com/web/assets/js/libs/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="https://fl.sogamecdn.com/web/assets/js/libs/bootstrap/popper.js"></script>
+    <script type="text/javascript"
+        src="https://fl.sogamecdn.com/web/assets/js/libs/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://fl.sogamecdn.com/web/assets/js/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="https://fl.sogamecdn.com/web/assets/js/libs/slick/slick.min.js"></script>
+    <script type="text/javascript"
+        src="https://fl.sogamecdn.com/web/assets/js/libs/isotope/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://fl.sogamecdn.com/web/assets/js/libs/select2/select2.min.js"></script>
+    <script type="text/javascript"
+        src="https://fl.sogamecdn.com/web/assets/js/libs/sticky-sidebar/theia-sticky-sidebar.min.js"></script>
+    <script type="text/javascript" src="https://fl.sogamecdn.com/web/assets/js/thim-custom.min.js"></script>
+    {{/block}}
+
+</body>
+
+</html>

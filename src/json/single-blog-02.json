@@ -1,0 +1,53 @@
+{
+    "title": {
+        "top": "Single Blog",
+        "left": "Home",
+        "right": "Single Blog"
+    },
+    "single_blog": {
+        "title": "STEPS TO PROTECTING YOUR STEAM ACCOUNT & ONLINE GAMING",
+        "img": "./assets/image/new-02.webp",
+        "month": "June, 2023",
+        "day": "19",
+        "tag": "Game",
+        "content": "<p>Just like online gamers, Steam users often overlook account safety. Gamers build their accounts from scratch, buying and earning rewards and games and gaining invaluable friendships along the way. But it can all go away if you don’t secure your account. New risks emerge regularly. Hackers forcefully steal your accounts with various dirty tactics. Here are some steps to protecting your Steam account & online gaming.</p><p>Except there’s a problem with this picture: it’s just not true.</p><p>How to Stay Safe and Keep Your Steam Account Safe</p><p>You can adopt several security measures right now to keep your Steam account and online gaming safe.</p><p>Use Complicated and Unique Passwords: Using a mix of characters, numbers, and Symbols ensures the highest password security and makes it very hard to crack.</p><p>Activate Steam Guard Mobile Authenticator: Steam Guard helps you secure your account with 2-factor authentication, helping you quickly regain access in case your account is compromised, or you forget your password.</p><p>Configure Your Privacy Settings: You can implement additional measures to guard your privacy, such as keeping your information private, choosing account visibility, and hiding sensitive information.</p><p>Turn on your Mobile Account Recovery: Turning your account recovery on can do you wonders. With Just one text, you can get back logged in on your Steam account. It also makes it harder for hackers to breach your team account.</p><p>Use a Virtual Private Network (VPN): A virtual private network camouflages your IP address when you use your Steam account. Protecting you against various phishing and hacking attacks. More specifically, a VPN download helps hide your IP address, which also assists in getting better game deals.</p><p>Conclusion: This blog taught you how to keep your Steam account safe from hackers and scammers with Steam Guard, Virtual Private Network, etc. When your account gets compromised, all your hard work, memories, and personal information get compromised. It is crucial to ensure a secure Steam account and online gaming environment.</p>"
+    },
+    "aside_list": [
+        {
+            "link": "./single-blog-01.html",
+            "title": "STUDY: MILLENNIALS SPEND …",
+            "img": "./assets/image/new-01.jpeg",
+            "date": "March 14, 2023"
+        },
+        {
+            "link": "./single-blog-02.html",
+            "title": "STEPS TO PROTECTING …",
+            "img": "./assets/image/new-02.webp",
+            "date": " June 19, 2023"
+        },
+        {
+            "link": "./single-blog-03.html",
+            "title": "8 BALL MASTER CUES OFF …",
+            "img": "./assets/image/new-03.webp",
+            "date": "May 24, 2023"
+        },
+        {
+            "link": "./single-blog-04.html",
+            "title": "WHAT FAN STUDIO ARE …",
+            "img": "./assets/image/new-04.webp",
+            "date": "August 15, 2023"
+        },
+        {
+            "link": "./single-blog-05.html",
+            "title": "ACCLAIMED SURVIVAL …",
+            "img": "./assets/image/new-05.webp",
+            "date": "May 12, 2023"
+        },
+        {
+            "link": "./single-blog-06.html",
+            "title": "BANKSTERS – A UNIQUE NFT …",
+            "img": "./assets/image/new-06.webp",
+            "date": "June 13, 2023"
+        }
+    ]
+}

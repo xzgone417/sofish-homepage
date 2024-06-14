@@ -104,7 +104,7 @@ module.exports = {
       filename: "css/[name].css", //输出文件
     }),
     new CopyWebpackPlugin({
-      patterns: [{ from: "public", to: "public" }],
+      patterns: [{ from: "src/public", to: "public" }],
     }),
   ],
   resolve: {
@@ -112,6 +112,7 @@ module.exports = {
       // 样式路径目录别名
       $css: resolve(__dirname, "src/css"),
       $json: resolve(__dirname, "src/json"),
+      $assets: resolve(__dirname, "src/assets"),
     },
   },
   performance: false, // 完全禁用大小限制

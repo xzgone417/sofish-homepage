@@ -10,9 +10,9 @@ const webScripts = [
   "contact",
   "blogs",
   "games",
+  "single-blog",
   "media-style",
 ];
-// const script_libs = ["bootstrap"."isotope.pkgd"];
 // 需要生成的静态页面
 const htmls = [
   {
@@ -32,8 +32,38 @@ const htmls = [
   },
   {
     name: "blogs-2.html",
-    template: "blogs.html",
+    template: "blogs-2.html",
     chunks: ["blogs"],
+  },
+  {
+    name: "single-blog-01.html",
+    template: "single-blog-01.html",
+    chunks: ["single-blog"],
+  },
+  {
+    name: "single-blog-02.html",
+    template: "single-blog-02.html",
+    chunks: ["single-blog"],
+  },
+  {
+    name: "single-blog-03.html",
+    template: "single-blog-03.html",
+    chunks: ["single-blog"],
+  },
+  {
+    name: "single-blog-04.html",
+    template: "single-blog-04.html",
+    chunks: ["single-blog"],
+  },
+  {
+    name: "single-blog-05.html",
+    template: "single-blog-05.html",
+    chunks: ["single-blog"],
+  },
+  {
+    name: "single-blog-06.html",
+    template: "single-blog-06.html",
+    chunks: ["single-blog"],
   },
 ];
 /**
@@ -73,7 +103,10 @@ module.exports = {
     try {
       const filePath = path.join("src/json", `${baseName}.json`);
       const jsonFiles = fs.readFileSync(filePath, "utf8");
-      jsonData = JSON.parse(jsonFiles);
+      const commonFiles = fs.readFileSync("src/json/common.json", "utf8");
+      const once_jsonData = JSON.parse(jsonFiles);
+      const once_commonData = JSON.parse(commonFiles);
+      jsonData = { ...once_commonData, ...once_jsonData };
     } catch (err) {
       console.error(err);
     }
