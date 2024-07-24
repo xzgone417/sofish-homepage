@@ -383,6 +383,7 @@
         }
       });
     },
+    // 
     login_popup: function () {
       $(".login-popup").on("click", ".display-box", function (e) {
         e.preventDefault();
