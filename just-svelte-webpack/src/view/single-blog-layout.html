@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    {{block "head"}}
+    <title>SOFISH</title>
+    {{/block}}
+    <!-- twitter分享 -->
+    <!-- <meta property="twitter:url" content="http://gg.chendahai.cn/static/share/index.html" />
+    <meta name="twitter:title" content="This is title" />
+    <meta name="twitter:description" content="This is desc" />
+    <meta name="twitter:site" content="http://gg.chendahai.cn/static/share/index.html">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="http://gg.chendahai.cn/static/image/apple.jpg" /> -->
+
+    <!-- facebook分享 -->
+    <!-- <meta property="og:url" content="http://gg.chendahai.cn/static/share/index.html" />
+    <meta property="og:title" content="This is my plan,let's play together" />
+    <meta property="og:description" content="This is my plan,let's play together" />
+    <meta property="og:image" content="http://gg.chendahai.cn/static/image/apple.jpg" />
+    <meta property="og:type" content="website" /> -->
+
+    <!-- webpackIgnore: true -->
+    <link rel="icon" type="image/png" href="./public/favicon.ico" />
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/css/libs/bootstrap/bootstrap.min.css">
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/fonts/ionicons-2.0.1/css/ionicons.min.css">
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/css/libs/slick/slick.min.css">
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/css/libs/magnific-popup/magnific-popup.min.css">
+    <!-- /webpackIgnore -->
+</head>
+
+<body>
+    {{block "content"}}
+    <div id="singleBlog-app"></div>
+    {{/block}}
+    <div id="app-dialogs"></div>
+    <div id="back-to-top" class="btn-back-to-top">
+        <i class="ion ion-ios-arrow-thin-up"></i>
+    </div>
+
+    <div id="wifi-loader">
+        <svg class="circle-outer" viewBox="0 0 86 86">
+            <circle class="back" cx="43" cy="43" r="40"></circle>
+            <circle class="front" cx="43" cy="43" r="40"></circle>
+            <circle class="new" cx="43" cy="43" r="40"></circle>
+        </svg>
+        <svg class="circle-middle" viewBox="0 0 60 60">
+            <circle class="back" cx="30" cy="30" r="27"></circle>
+            <circle class="front" cx="30" cy="30" r="27"></circle>
+        </svg>
+        <svg class="circle-inner" viewBox="0 0 34 34">
+            <circle class="back" cx="17" cy="17" r="14"></circle>
+            <circle class="front" cx="17" cy="17" r="14"></circle>
+        </svg>
+        <div class="text" data-text="Searching"></div>
+    </div>
+    <div id="wifi-loader-overlay"></div>
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/jquery/jquery.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/bootstrap/popper.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/bootstrap/bootstrap.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <!-- <script type="text/javascript" src="./public/js/libs/magnific-popup/jquery.magnific-popup.min.js"></script> -->
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/slick/slick.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <!-- <script type="text/javascript" src="./public/js/libs/isotope/isotope.pkgd.min.js"></script> -->
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/select2/select2.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/sticky-sidebar/theia-sticky-sidebar.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/thim-custom.min.js"></script>
+    <!-- /webpackIgnore -->
+    {{block "script"}}
+
+    {{/block}}
+</body>
+
+</html>

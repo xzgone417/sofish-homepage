@@ -1,0 +1,115 @@
+{
+    "home_game": {
+        "title": "Oil Era - Idle Mining Tycoon",
+        "video_link": "https://www.youtube.com/watch?v=SgocMZj5A40",
+        "gp_link": "https://play.google.com/store/apps/details?id=com.aliensidea.oiltycoon.overseas&hl=en&gl=us",
+        "ios_link": "",
+        "img": "./public/images/video.webp",
+        "score": 5,
+        "desc": "you can bid to exploit the oil, sell oil and gas, build your own oil refinery and chemical plant, and embark on the road to become an Oil Tycoon!"
+    },
+    "game_list": [
+        {
+            "title": "Ludo Land - Dice Board Game",
+            "gp_link": "https://play.google.com/store/apps/details?id=com.sofish.ludoland&pcampaignid=web_share",
+            "ios_link": "",
+            "img": "./public/images/game-01.jpg",
+            "tag": "HD",
+            "desc": ""
+        },
+        {
+            "title": "Ever Legend: Idle RPG",
+            "gp_link": "https://play.google.com/store/apps/details?id=com.sofish.anr.brawlknight&pcampaignid=web_share",
+            "ios_link": "",
+            "img": "./public/images/game-02.webp",
+            "tag": "CAM",
+            "desc": ""
+        },
+        {
+            "title": "住客大人的心願",
+            "gp_link": "https://play.google.com/store/apps/details?id=com.sofish.tenants.wishes",
+            "ios_link": "",
+            "img": "./public/images/game-03.webp",
+            "tag": "NEW",
+            "desc": ""
+        },
+        {
+            "title": "Paper Wars:The Campfire",
+            "gp_link": "https://play.google.com/store/apps/details?id=com.sofish.campfire.herowars",
+            "ios_link": "",
+            "img": "./public/images/game-04.webp",
+            "tag": "Hot",
+            "desc": ""
+        }
+    ],
+    "news_feed": {
+        "top": [
+            {
+                "type": "top",
+                "tip_title": "",
+                "title": "",
+                "tip_desc": "",
+                "desc": "STUDY: MILLENNIALS SPEND MORE TIME PLAYING VIDEO GAMES THAN GENERATION Z",
+                "date": "March 14, 2023",
+                "link": "../single-blog-01.html",
+                "img": "./public/images/new-01.jpeg"
+            },
+            {
+                "type": "top",
+                "tip_title": "",
+                "title": "",
+                "tip_desc": "",
+                "desc": "WHAT FAN STUDIO ARE DOING TO IMPROVE GAME DEVELOPMENT AND ITS GAMIFICATION STRATEGIES",
+                "date": "August 15, 2023",
+                "link": "../single-blog-04.html",
+                "img": "./public/images/new-04.webp"
+            }
+        ],
+        "item": [
+            [
+                {
+                    "type": "item",
+                    "tip_title": "STEPS TO PROTECTING YOUR STEAM ACCOUNT & ONLINE GAMING",
+                    "title": "STEPS TO PROTECTING …",
+                    "tip_desc": "Just like online gamers, Steam users often overlook account safety. Gamers build their accounts from scratch, buying and earning rewards and games and gaining invaluable friendships along the way.",
+                    "desc": "Just like online gamers, Steam users often overlook accountsafety. Gamers build their accounts …",
+                    "date": "June 19, 2023",
+                    "link": "../single-blog-02.html",
+                    "img": "./public/images/new-02.webp"
+                },
+                {
+                    "type": "item",
+                    "tip_title": "8 BALL MASTER CUES OFF ON GAME HOLLYWOOD GAMES WITH A SEVERAL HUGE EVENTS",
+                    "title": "8 BALL MASTER CUES OFF …",
+                    "tip_desc": "Game Hollywood Games has made a name for itself as one of the finest purveyors of browser-based strategy and role-playing MMOs on the internet. With its next big release, the platform is adding a whole new genre to its library. …",
+                    "desc": "Game Hollywood Games has made a name for itself as one of the finest purveyors of  browser-based …",
+                    "date": "May 24, 2023",
+                    "link": "../single-blog-03.html",
+                    "img": "./public/images/new-03.webp"
+                }
+            ],
+            [
+                {
+                    "type": "item",
+                    "tip_title": "ACCLAIMED SURVIVAL STRATEGY GAME DOOMSDAY: LAST SURVIVORS GETS A PC VERSION",
+                    "title": "  ACCLAIMED SURVIVAL …",
+                    "tip_desc": "To start the day in the best way, enjoythe extraordinary buffetbreakfast in the our courtyard caressed at auctor.",
+                    "desc": "To start the day in the best way, enjoythe extraordinary buffetbreakfast in the our courtyard caressed at auctor.…",
+                    "date": " May 12, 2023",
+                    "link": "../single-blog-05.html",
+                    "img": "./public/images/new-05.webp"
+                },
+                {
+                    "type": "item",
+                    "tip_title": "KARTRIDER: DRIFT LICENSE GUIDE – HOW TO GET MORE TRACKS",
+                    "title": "BANKSTERS – A UNIQUE NFT …",
+                    "tip_desc": "KARTRIDER: DRIFT LICENSE GUIDE – HOW TO GET MORE TRACKS",
+                    "desc": "NFTs are everywhere nowadays, including in games. And that might be a pretty good thing if the newly …",
+                    "date": "June 13, 2023",
+                    "link": "../single-blog-06.html",
+                    "img": "./public/images/new-06.webp"
+                }
+            ]
+        ]
+    }
+}

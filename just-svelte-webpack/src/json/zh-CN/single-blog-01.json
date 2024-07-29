@@ -1,0 +1,53 @@
+{
+    "title": {
+        "top": "Single Blog",
+        "left": "Home",
+        "right": "Single Blog"
+    },
+    "single_blog": {
+        "title": "STUDY: MILLENNIALS SPEND MORE TIME PLAYING VIDEO GAMES THAN GENERATION Z",
+        "img": "./public/images/new-01.jpeg",
+        "month": "March, 2023",
+        "day": "14",
+        "tag": "Game",
+        "content": "<p>Video games have always been seen as a hobby for the young – a thing we grow out of as we accumulate more responsibilities.</p> <p> According to the cliche, the average family home contains two     parents reading quietly at the     kitchen table while their children zone out in front of the     living room TV, controllers in     hand, screaming at their friends through headsets.</p> <p>     Except there’s a problem with this picture: it’s just not true. </p> <div> <img class='lazyautosizes lazyloaded' src='./public/images/detail-01.webp' data-srcset='./public/images/detail-01.webp 320w, ./public/images/detail-01.webp 480w'  data-sizes='auto' sizes='948px' srcset='./public/images/detail-01.webp 320w, ./public/images/detail-01.webp 480w'> </div> <p></p> <p>In reality, kids these days are falling behind their older counterparts when it comes to putting in gaming time.</p> <p>According to a study conducted by ExpressVPN, gamers in their 30s and 40s are significantly more likely to play games than people in their 20s.</p> <p>ExpressVPN’s study also shows that 68% of older gamers admit to     playing every day, compared with just 58% of younger gamers.</p> <p>In addition, Millennials (people born between the early 80s and the late 90s) are more likely to spend a whole day a week playing games than those in Generation Z (people born between the late 90s and the early 2010s).</p> <p>Interestingly, while the oldest group surveyed (46 to 55)     reported being less likely than     Millenials to play games every day, they were more likely to have spent a full 24 hours playing a game in a single session at some point in their lives. </p> <p>This goes to show that if you stick around long enough, you can achieve most things.</p> <p>Elsewhere, the study shows that gamers in Generation Z are more likely than their older     counterparts to play during the day, presumably because Millennials have jobs to go to.</p> <p>It’s notable that Millennials are much more likely to play into the night, even if doing so disrupts their sleep or interferes with other commitments.</p> <p>It’s not immediately clear why Millennials are more prolific     gamers than those in Generation     Z, but it might have something to do with their generally higher levels of disposable income. </p>"
+    },
+        "aside_list": [
+        {
+            "link": "./single-blog-01.html",
+            "title": "STUDY: MILLENNIALS SPEND …",
+            "img": "./public/images/new-01.jpeg",
+            "date": "2023-03-14"
+        },
+        {
+            "link": "./single-blog-02.html",
+            "title": "STEPS TO PROTECTING …",
+            "img": "./public/images/new-02.webp",
+            "date": " 2023-06-19"
+        },
+        {
+            "link": "./single-blog-03.html",
+            "title": "8 BALL MASTER CUES OFF …",
+            "img": "./public/images/new-03.webp",
+            "date": "2023-05-24"
+        },
+        {
+            "link": "./single-blog-04.html",
+            "title": "WHAT FAN STUDIO ARE …",
+            "img": "./public/images/new-04.webp",
+            "date": "2023-08-15"
+        },
+        {
+            "link": "./single-blog-05.html",
+            "title": "ACCLAIMED SURVIVAL …",
+            "img": "./public/images/new-05.webp",
+            "date": "2023-05-12"
+        },
+        {
+            "link": "./single-blog-06.html",
+            "title": "BANKSTERS – A UNIQUE NFT …",
+            "img": "./public/images/new-06.webp",
+            "date": "2023-06-13"
+        }
+    ]
+}
