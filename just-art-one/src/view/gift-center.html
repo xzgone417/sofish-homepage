@@ -1,0 +1,68 @@
+{{extend './template/layout.html'}}
+
+
+{{block "content"}}
+<div class="responsive home-1" id="wrapper-container">
+    {{include "./template/header.art"}}
+    <main class="new-content">
+        <div class="container">
+            <div class="page-header">
+                <span>当前位置：</span>
+                <a href="./index.html">首页</a>
+                <i class="ion ion-chevron-right"></i>
+                <a href="#">gift-center</a>
+            </div>
+            <div class="row ">
+                <div class="gift-center-type">
+                    <button type="button" id="gift-center-btn" class="btn btn-default btn-lg user-btn">礼包中心</button>
+                    <button type="button" id="my-gift-btn" class="btn btn-danger btn-lg user-btn">我的礼包</button>
+                </div>
+                <div class="col-sm-6 gift-list">
+                    <div class="gift-item">
+                        <div class="gift-item-content">
+                            <div class="content-img"></div>
+                            <div class="content-text">
+                                <p class="text-name">游戏名称XXXX:新手礼包XXXXXXX
+                                </p>
+                                <p class="text-description"> 礼包奖励描述XXXOXXXXXXXXX</p>
+                                <p class="text-course">兑换教程:XXXXXX40童中市场</p>
+                            </div>
+                            <div class="content-btn">
+                                <button type="button" class="btn btn-default btn-lg gift-content-btn">领取</button>
+
+                            </div>
+                        </div>
+                        <div class="gift-item-addition">
+                            <p class="addition-text">礼包兑换码:xxxxxxxxxxxxxx</p>
+                            <p class="addition-btn"> <button type="button"
+                                    class="btn btn-default gift-addition-btn">复制</button></p>
+                        </div>
+                    </div>
+                    <div class="gift-item">
+                        <div class="gift-item-content">
+                            <div class="content-img"></div>
+                            <div class="content-text">
+                                <p class="text-name">游戏名称XXXX:新手礼包XXXXXXX
+                                </p>
+                                <p class="text-description"> 礼包奖励描述XXXOXXXXXXXXX</p>
+                                <p class="text-course">兑换教程:XXXXXX40童中市场</p>
+                            </div>
+                            <div class="content-btn">
+                                <button type="button" class="btn btn-default btn-lg gift-content-btn">领取</button>
+
+                            </div>
+                        </div>
+                        <div class="gift-item-addition">
+                            <p class="addition-text">礼包兑换码:xxxxxxxxxxxxxx</p>
+                            <p class="addition-btn"> <button type="button"
+                                    class="btn btn-default gift-addition-btn">复制</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    {{include "./template/footer.art"}}
+</div>
+{{/block}}

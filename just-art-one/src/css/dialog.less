@@ -1,0 +1,629 @@
+.modal-open {
+    padding-right: 0px !important;
+}
+
+#login-dialogs {
+    overflow-y: hidden;
+}
+
+.login-dialogs-content {
+    width : 1150px;
+    margin: 20vh auto;
+
+    .media-content {
+        padding            : 100px 30px;
+        width              : 360px;
+        background-repeat  : no-repeat;
+        background-position: center center;
+        background-size    : cover;
+        background-image   : url(http://tmp-test.sofishgame.com/public/images/homebg.png);
+        height             : 600px;
+        position           : relative;
+        z-index            : 1;
+        display            : flex;
+        flex-direction     : column;
+        justify-content    : center;
+        align-items        : center;
+        text-align         : center;
+        color              : #aaa;
+        font-size          : 16px;
+        line-height        : 1.63em;
+    }
+
+    &.media-content .heading {
+        margin-top   : 10px;
+        color        : #aaa;
+        font-size    : 14px;
+        font-weight  : 400;
+        line-height  : normal;
+        margin-bottom: 40px;
+    }
+
+    .media-content:before {
+        content   : "";
+        left      : 0;
+        right     : 0;
+        top       : 0;
+        bottom    : 0;
+        background: #000;
+        opacity   : 0.5;
+        position  : absolute;
+        z-index   : -1;
+    }
+
+    .inner-login {
+        flex-grow: 1;
+        padding  : 50px 50px 40px 50px;
+    }
+
+    .form-row {
+        display: flex;
+    }
+
+    .wrap-form {
+        flex-grow    : 1;
+        padding-right: 30px;
+    }
+
+    .login-popup {
+        height    : 0;
+        left      : 0;
+        right     : 0;
+        bottom    : 0;
+        top       : 0;
+        transition: all 0.6s;
+        filter    : alpha(opacity=0);
+        opacity   : 0;
+        transform : translate(0, -50px);
+        visibility: hidden;
+        width     : 100%;
+
+        /*overflow-x: hidden;*/
+        display: flex;
+
+        &.active {
+            z-index   : 2;
+            transform : translate(0, 0);
+            opacity   : 1;
+            visibility: visible;
+            height    : auto;
+        }
+    }
+
+    .popup-close {
+        cursor     : pointer;
+        position   : absolute;
+        right      : -40px;
+        top        : -50px;
+        line-height: 50px;
+        text-align : center;
+        font-size  : 40px;
+        color      : #fff;
+        opacity    : 1;
+        width      : 50px;
+        height     : 50px;
+    }
+
+    .message {
+        position : static;
+        display  : block;
+        font-size: 13px !important;
+    }
+
+    .login-popup-container>br {
+        display: none;
+    }
+
+    .login-popup .title {
+        font-size    : 20px;
+        line-height  : 1.2em;
+        font-weight  : 400;
+        color        : #999;
+        margin-bottom: 46px;
+
+        a {
+            color: #999;
+        }
+
+        .current-title {
+            font-size  : 24px;
+            font-weight: 700;
+        }
+
+        span {
+            &:first-child:after {
+                content     : "/";
+                padding-left: 5px;
+            }
+
+            &:last-child:after {
+                display: none;
+            }
+        }
+    }
+}
+
+.login-popup {
+    p {
+        &:before {
+            content: " ";
+            display: table;
+        }
+
+        &:after {
+            content: " ";
+            display: table;
+            clear  : both;
+        }
+    }
+
+    label:after {
+        color                  : #777;
+        display                : inline-block;
+        font                   : normal normal normal 15px/1 FontAwesome;
+        text-rendering         : auto;
+        -webkit-font-smoothing : antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .login-email,
+    .login-username,
+    .login-password {
+        line-height  : 50px;
+        position     : relative;
+        margin-bottom: 0;
+    }
+
+    .login-email label,
+    .login-username label,
+    .login-password label {
+        font-size    : 0;
+        position     : absolute;
+        top          : 8px;
+        right        : 20px;
+        margin-bottom: 0;
+    }
+
+    .login-email label:after,
+    .login-username label:after,
+    .login-password label:after {
+        font-family: ionicons;
+        font-size  : 20px;
+        color      : #999;
+    }
+
+    form {
+        font-size: 16px;
+
+        .input {
+            height       : 50px;
+            line-height  : 50px;
+            margin-bottom: 20px;
+            padding      : 0 2em 0 1em;
+            font-size    : 14px;
+            font-family  : inherit;
+
+            &[type=password],
+            &[type=email],
+            &[type=text] {
+                width        : 100%;
+                color        : #aaa;
+                border-radius: 5px;
+                border       : 1px solid #eee;
+                font-style   : italic;
+            }
+
+            &[type=password]:-moz-placeholder,
+            &[type=email]:-moz-placeholder,
+            &[type=text]:-moz-placeholder,
+            &[type=password]::-moz-placeholder,
+            &[type=email]::-moz-placeholder,
+            &[type=text]::-moz-placeholder,
+            &[type=password]:-ms-input-placeholder,
+            &[type=email]:-ms-input-placeholder,
+            &[type=text]:-ms-input-placeholder,
+            &[type=password]::-webkit-input-placeholder,
+            &[type=email]::-webkit-input-placeholder,
+            &[type=text]::-webkit-input-placeholder {
+                color: #aaa;
+            }
+        }
+
+        [type=checkbox] {
+            width         : 12px;
+            height        : 12px;
+            border        : 1px solid #ccc;
+            border-radius : 0;
+            vertical-align: middle;
+            margin-bottom : 0.1em;
+            margin-right  : 0.2em;
+        }
+
+        .submit-btn {
+            cursor       : pointer;
+            width        : 100%;
+            font-size    : 16px;
+            font-weight  : 500;
+            height       : 50px;
+            border-radius: 30px;
+            transition   : all 0.5s;
+            box-shadow   : 5.7px 5.7px 15.7px 0.3px rgba(0, 0, 0, 0.12);
+        }
+    }
+
+    .lost-pass-link {
+        float        : right;
+        font-size    : 16px;
+        font-weight  : 400;
+        width        : 50%;
+        display      : block;
+        margin-top   : 7px;
+        margin-bottom: 14px;
+        line-height  : 25px;
+        text-align   : right;
+        color        : #555 !important;
+    }
+
+    .link-bottom {
+        margin-top : 21px;
+        font-size  : 16px;
+        font-weight: 400;
+        color      : #aaa;
+
+        a {
+            color          : #aaa;
+            text-decoration: underline;
+        }
+    }
+
+    .login-remember {
+        margin-bottom: 1px;
+    }
+}
+
+.popup-password-eye {
+    position  : absolute;
+    right     : 0.5em;
+    z-index   : 2;
+    text-align: center;
+    top       : calc(25% - 0.1em);
+    font-size : 1em;
+    cursor    : pointer;
+}
+
+@media (max-width: 1400px) and (min-width: 1024px) {
+    #login-dialogs .login-dialogs-content {
+        width: 930px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 767px) {
+    #login-dialogs .login-dialogs-content {
+        width: 80%;
+
+        .media-content {
+            width: 230px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #login-dialogs .login-dialogs-content {
+        width: 80%;
+
+        .media-content {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #login-dialogs .login-dialogs-content {
+        width : calc(90% - 50px);
+        margin: 10vh auto;
+
+        .login-popup {
+            .inner-login {
+                padding: 10vw 10vw 8vw 10vw;
+
+                .title {
+                    font-size    : 16px;
+                    margin-bottom: 6vw;
+
+                    .current-title {
+                        font-size: 20px;
+                    }
+                }
+
+                .form-row {
+                    .wrap-form {
+                        padding-right: 0;
+
+                        form {
+                            .input {
+                                height       : 3em;
+                                line-height  : 3em;
+                                margin-bottom: 1em;
+                            }
+
+                            .popup-password-eye {
+                                font-size: 1em;
+                            }
+
+                            .submit-btn {
+                                height     : 2.5em;
+                                line-height: 2.5em;
+                            }
+
+                            .text-mail {
+                                font-size: 12px;
+                            }
+
+                            .text-protocol {
+                                font-size: 13px;
+                            }
+
+                            .link-bottom {
+                                margin-top: 1em;
+                                font-size : 14px;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+        .box-lostpass {
+            .inner-login {
+                padding: 10vw 8vw 8vw 8vw;
+
+                .title {
+                    margin-bottom: 3vw;
+
+                    .current-title {
+                        font-size: 18px;
+
+                    }
+                }
+
+                #lostpasswordform {
+                    .description {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+.protocol-modal-dialog {
+    margin-top: calc(50vh - 50px);
+
+    .modal-title {
+        text-align: center;
+    }
+}
+
+
+input[type=password]::-ms-reveal {
+    display: none;
+}
+
+/* 遮罩层样式 */
+
+#wifi-loader-overlay {
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index         : 90;
+}
+
+#wifi-loader {
+    --background   : #62abff;
+    --front-color  : #f81717;
+    --back-color   : #c3c8de;
+    --text-color   : #414856;
+    width          : 64px;
+    height         : 64px;
+    border-radius  : 50px;
+    position       : fixed;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    left           : 50%;
+    top            : 50%;
+    transform      : translate(-50%, -50%);
+    z-index        : 999;
+
+    svg {
+        position       : absolute;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+
+        circle {
+            position        : absolute;
+            fill            : none;
+            stroke-width    : 6px;
+            stroke-linecap  : round;
+            stroke-linejoin : round;
+            transform       : rotate(-100deg);
+            transform-origin: center;
+
+            &.back {
+                stroke: var(--back-color);
+            }
+
+            &.front {
+                stroke: var(--front-color);
+            }
+        }
+
+        &.circle-outer {
+            height: 86px;
+            width : 86px;
+
+            circle {
+                stroke-dasharray: 62.75 188.25;
+
+                &.back {
+                    animation: circle-outer135 1.8s ease infinite 0.3s;
+                }
+
+                &.front {
+                    animation: circle-outer135 1.8s ease infinite 0.15s;
+                }
+            }
+        }
+
+        &.circle-middle {
+            height: 60px;
+            width : 60px;
+
+            circle {
+                stroke-dasharray: 42.5 127.5;
+
+                &.back {
+                    animation: circle-middle6123 1.8s ease infinite 0.25s;
+                }
+
+                &.front {
+                    animation: circle-middle6123 1.8s ease infinite 0.1s;
+                }
+            }
+        }
+
+        &.circle-inner {
+            height: 34px;
+            width : 34px;
+
+            circle {
+                stroke-dasharray: 22 66;
+
+                &.back {
+                    animation: circle-inner162 1.8s ease infinite 0.2s;
+                }
+
+                &.front {
+                    animation: circle-inner162 1.8s ease infinite 0.05s;
+                }
+            }
+        }
+    }
+
+    .text {
+        position       : absolute;
+        bottom         : -40px;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        text-transform : lowercase;
+        font-weight    : 500;
+        font-size      : 14px;
+        letter-spacing : 0.2px;
+
+        &::before,
+        &::after {
+            content: attr(data-text);
+        }
+
+        &::before {
+            color: var(--text-color);
+        }
+
+        &::after {
+            color    : var(--front-color);
+            animation: text-animation76 3.6s ease infinite;
+            position : absolute;
+            left     : 0;
+        }
+    }
+}
+
+@keyframes circle-outer135 {
+    0% {
+        stroke-dashoffset: 25;
+    }
+
+    25% {
+        stroke-dashoffset: 0;
+    }
+
+    65% {
+        stroke-dashoffset: 301;
+    }
+
+    80% {
+        stroke-dashoffset: 276;
+    }
+
+    100% {
+        stroke-dashoffset: 276;
+    }
+}
+
+@keyframes circle-middle6123 {
+    0% {
+        stroke-dashoffset: 17;
+    }
+
+    25% {
+        stroke-dashoffset: 0;
+    }
+
+    65% {
+        stroke-dashoffset: 204;
+    }
+
+    80% {
+        stroke-dashoffset: 187;
+    }
+
+    100% {
+        stroke-dashoffset: 187;
+    }
+}
+
+@keyframes circle-inner162 {
+    0% {
+        stroke-dashoffset: 9;
+    }
+
+    25% {
+        stroke-dashoffset: 0;
+    }
+
+    65% {
+        stroke-dashoffset: 106;
+    }
+
+    80% {
+        stroke-dashoffset: 97;
+    }
+
+    100% {
+        stroke-dashoffset: 97;
+    }
+}
+
+@keyframes text-animation76 {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    50% {
+        clip-path: inset(0);
+    }
+
+    100% {
+        clip-path: inset(0 0 0 100%);
+    }
+}

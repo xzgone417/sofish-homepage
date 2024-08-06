@@ -1,0 +1,46 @@
+<!-- 模态框2 -->
+<div id="user-center-dialog" class="modal fade" role="dialog">
+    <div class="modal-content login-dialogs-content" role="document">
+        <div class="popup-close">
+            <i class="fa fa-times"></i>
+        </div>
+
+        <!--login  -->
+        <div class="login-popup">
+            <div class="media-content"></div>
+            <div class="inner-login">
+                <h3 class="title">
+                    <span>
+                        <a href="#" class="display-box" data-display=".box-register">Registration</a>
+                    </span>
+                    <span class="current-title">Login</span>
+                </h3>
+                <div class="form-row">
+                    <div class="wrap-form">
+                        <div class="form-desc"> We will need... </div>
+                        <form id="reset-password-form">
+                            <p class="login-username">
+                                <input type="text" name="userName" placeholder="Username" class="input">
+                            </p>
+                            <p class="login-password">
+                                <input type="password" name="password" placeholder="Password" class="input ">
+                                <i class="far fa-eye-slash popup-password-eye" aria-hidden="true"></i>
+                            </p>
+                            <p class="login-remember">
+                                <label> <input type="checkbox" name="rememberMe" id="rememberMe"> Remember Me</label>
+                            </p>
+                            <p class="button-submit">
+                                <button type="submit" class="button btn-danger button-large submit-btn">Login</button>
+                            </p>
+                            <p class="link-bottom"><a href="#" class="display-box" data-display=".box-lostpass"></a>
+                            </p>
+                        </form>
+                        <p class="link-bottom">
+                            <a href="#" class="display-box" data-display=".box-lostpass"> Lost your password? </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

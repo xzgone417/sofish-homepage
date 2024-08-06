@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script>
+        // 带上query值
+        // if (navigator.language === "zh-CN") {
+        //     let pathName = window.location.pathname
+        //     if (pathName === "/" || !pathName) {
+        //         pathName = "index.html"
+        //     }
+        //     let filePathName = pathName.substring(pathName.lastIndexOf("/") + 1); // 得到 "index.html"
+        //     let roadName = filePathName.substring(0, filePathName.lastIndexOf('.')); // 得到 "index"
+        //     if (roadName.includes("-zhCN")) {
+        //         console.log(window.location.pathname, "pp");
+        //     } else if (roadName.includes("-zhTW")) {
+        //         const newRoadName = roadName.replace(/-zhTW/, '')
+        //         window.open(`./${newRoadName}-zhCN.html`, "_self")
+        //     } else {
+        //         window.open(`./${roadName}-zhCN.html`, "_self")
+        //     }
+
+        //     // window.location.href = "https://example.com/new-page";
+        // }
+    </script>
+    {{block "head"}}
+    <title>SOFISH</title>
+    {{/block}}
+    <!-- webpackIgnore: true -->
+    <link rel="icon" type="image/png" href="./public/favicon.ico" />
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/css/libs/bootstrap/bootstrap.min.css">
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/fonts/ionicons-2.0.1/css/ionicons.min.css">
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/css/libs/slick/slick.min.css">
+    <!-- /webpackIgnore -->
+    {{block "style"}}{{/block}}
+</head>
+
+<body>
+    {{block "content"}}{{/block}}
+
+    {{include "./dialogs.art"}}
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/jquery/jquery.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/bootstrap/popper.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/bootstrap/bootstrap.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/slick/slick.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/isotope/isotope.pkgd.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/select2/select2.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/sticky-sidebar/theia-sticky-sidebar.min.js"></script>
+    <!-- /webpackIgnore -->
+    {{block "script"}}
+
+    {{/block}}
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/thim-custom.min.js"></script>
+    <!-- /webpackIgnore -->
+
+</body>
+
+</html>

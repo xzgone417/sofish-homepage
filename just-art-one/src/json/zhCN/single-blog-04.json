@@ -1,0 +1,53 @@
+{
+    "title": {
+        "top": "Single Blog",
+        "left": "Home",
+        "right": "Single Blog"
+    },
+    "single_blog": {
+        "title": " WHAT FAN STUDIO ARE DOING TO IMPROVE GAME DEVELOPMENT AND ITS GAMIFICATION STRATEGIES",
+        "img": "http://tmp-test.sofishgame.com/public/images/new-04.webp",
+        "month": "August, 2023",
+        "day": "15",
+        "tag": "Game",
+        "content": "<p>You might read the words ‘gamification strategies’ and feel some sense of trepidation and unease, but don’t. Fan Studio is ahead of the curve when it comes to such strategies, and uses them in a range of exciting ways – for clients and consumers alike.</p><p>Based in London, it has taken on the ever changing challenges of the mobile gaming industry for the last fifteen years. And we’re here to run you through how the studio has managed to adapt and improve ever since it was founded back in 2008.</p><p>Bespoke Solutions</p><p>Fan Studio has been involved with various gaming projects, but one that stands out is its work with DHL, a courier logistics company. Together the two created EffiBot Dash, which is based around DHL’s automated delivery cart called EffiBot.</p><div><img class='lazyautosizes lazyloaded' src='http://tmp-test.sofishgame.com/public/images/new-bg03.webp' data-srcset='http://tmp-test.sofishgame.com/public/images/new-bg03.webp 320w, http://tmp-test.sofishgame.com/public/images/new-bg03-1.webp 480w, http://tmp-test.sofishgame.com/public/images/new-bg03-2.webp 768w, http://tmp-test.sofishgame.com/public/images/new-bg03-3.webp 1024w, http://tmp-test.sofishgame.com/public/images/new-bg03-04.webp 1280w' data-sizes='auto' sizes='948px' srcset='http://tmp-test.sofishgame.com/public/images/new-bg03.webp 320w, http://tmp-test.sofishgame.com/public/images/new-bg03-1.webp 480w, http://tmp-test.sofishgame.com/public/images/new-bg03-2.webp 768w, http://tmp-test.sofishgame.com/public/images/new-bg03-3.webp 1024w, http://tmp-test.sofishgame.com/public/images/new-bg03-04.webp 1280w'></div><p></p><p>Far from being an empty and soulless tie-in, the game teaches players how real-world logistics scenarios work, and does it in an engaging and exciting way. Ultimately, it heightens brand awareness for DHL and showcasing their commitment to innovation.</p><p>Experts At Every Type of Experience</p><p>Then there’s The Little Kitten game series, which, thanks to the Fan Studio team’s expertise, blends animation and interactivity perfectly.</p><div><img class='lazyautosizes lazyloaded' src='http://tmp-test.sofishgame.com/public/images/new-bg04.webp' data-srcset='http://tmp-test.sofishgame.com/public/images/new-bg04.webp 320w, http://tmp-test.sofishgame.com/public/images/new-bg04-1.webp 480w, http://tmp-test.sofishgame.com/public/images/new-bg04-2.webp 768w, http://tmp-test.sofishgame.com/public/images/new-bg04-3.webp 1024w, http://tmp-test.sofishgame.com/public/images/new-bg04-4.webp 1280w' data-sizes='auto' sizes='948px' srcset='http://tmp-test.sofishgame.com/public/images/new-bg04.webp 320w, http://tmp-test.sofishgame.com/public/images/new-bg04-1.webp 480w, http://tmp-test.sofishgame.com/public/images/new-bg04-2.webp 768w, http://tmp-test.sofishgame.com/public/images/new-bg04-3.webp 1024w, http://tmp-test.sofishgame.com/public/images/new-bg04-4.webp 1280w'></div><p></p><p>It’s a great experience for kids, and like EffiBot Dash has an educational undertone. This time it’s done in a very different way, making sure the target audience is catered to and not insulted.</p><p>Providing Clarity on Development Costs</p><p>Most people wouldn’t have a clue about how much it actually costs to create a video game. There are so many elements to consider, including art, technology, and so much more besides.</p><p>So Fan Studio has created the Game Design Canvas, a tool to streamline the conceptualization process. It helps prospective clients lay out the key details of their projects and then see what the budget of the game could be.</p><p>Proven Track Record</p><p>Aside from the two games mentioned above, Fan Studio has seen games in top 10 rankings in the App Store, with over 5 million downloads for standout projects like TrafficVille 3D.</p><p>Gamification services</p><p>Gamification is the act of applying game design element in non-gaming contexts – and Fan Studio are very good at it. As shown from the games mentioned above they have more experience and expertise in this area than most, and utilise these skills to make the best possible products for its clients. You can find more about their gamification services here.</p><p>It’s clear that Fan Studio has not only looked to survive, but excel in the notoriously brutal mobile gaming industry, and provide some thoroughly modern solutions to a range of clients. You can read more about Fan Studio by visiting its official website right here.</p>"
+    },
+        "aside_list": [
+        {
+            "link": "./single-blog-01.html",
+            "title": "STUDY: MILLENNIALS SPEND …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-01.jpeg",
+            "date": "2023-03-14"
+        },
+        {
+            "link": "./single-blog-02.html",
+            "title": "STEPS TO PROTECTING …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-02.webp",
+            "date": " 2023-06-19"
+        },
+        {
+            "link": "./single-blog-03.html",
+            "title": "8 BALL MASTER CUES OFF …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-03.webp",
+            "date": "2023-05-24"
+        },
+        {
+            "link": "./single-blog-04.html",
+            "title": "WHAT FAN STUDIO ARE …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-04.webp",
+            "date": "2023-08-15"
+        },
+        {
+            "link": "./single-blog-05.html",
+            "title": "ACCLAIMED SURVIVAL …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-05.webp",
+            "date": "2023-05-12"
+        },
+        {
+            "link": "./single-blog-06.html",
+            "title": "BANKSTERS – A UNIQUE NFT …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-06.webp",
+            "date": "2023-06-13"
+        }
+    ]
+}

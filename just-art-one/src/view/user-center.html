@@ -1,0 +1,42 @@
+{{extend './template/layout.html'}}
+
+
+{{block "content"}}
+<div class="responsive home-1" id="wrapper-container">
+    {{include "./template/header.art"}}
+    <main class="new-content">
+        <div class="container">
+            <div class="page-header">
+                <span>当前位置：</span>
+                <a href="./index.html">首页</a>
+                <i class="ion ion-chevron-right"></i>
+                <a href="#">user-center</a>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 weal-div ">
+                    <div class="my-weal-div">
+                        <div class="user-bg-div"></div>
+                        <button type="button" id="to-open-my-gift" class="btn btn-default btn-lg user-btn">我的礼包</button>
+                        <a href="./gift-center.html"> <button type="button" id="to-open-gift-center user-btn"
+                                class="btn btn-default btn-lg user-btn">礼包中心</button></a>
+                        <button type="button" id="to-open-wholesale" class="btn btn-default btn-lg user-btn">大额汇款</button>
+                    </div>
+
+                </div>
+                <div class="col-xs-6 account-div">
+                    <div class="my-account-div">
+                        <div class="user-bg-div"></div>
+                        <button type="button" id="to-change-password" class="btn btn-default btn-lg user-btn">更改密码</button>
+                        <button type="button" id="to-bind-email" class="btn btn-default btn-lg user-btn">绑定邮箱</button>
+                        <button type="button" id="to-open-recharge-order"
+                            class="btn btn-default btn-lg user-btn">储值订单</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    {{include "./template/footer.art"}}
+</div>
+{{/block}}

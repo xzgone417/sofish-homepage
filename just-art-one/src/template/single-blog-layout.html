@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    {{block "head"}}
+    <title>SOFISH</title>
+    {{/block}}
+    <!-- twitter分享 -->
+    <!-- <meta property="twitter:url" content="http://gg.chendahai.cn/static/share/index.html" />
+    <meta name="twitter:title" content="This is title" />
+    <meta name="twitter:description" content="This is desc" />
+    <meta name="twitter:site" content="http://gg.chendahai.cn/static/share/index.html">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="http://gg.chendahai.cn/static/image/apple.jpg" /> -->
+
+    <!-- facebook分享 -->
+    <!-- <meta property="og:url" content="http://gg.chendahai.cn/static/share/index.html" />
+    <meta property="og:title" content="This is my plan,let's play together" />
+    <meta property="og:description" content="This is my plan,let's play together" />
+    <meta property="og:image" content="http://gg.chendahai.cn/static/image/apple.jpg" />
+    <meta property="og:type" content="website" /> -->
+
+    <!-- webpackIgnore: true -->
+    <link rel="icon" type="image/png" href="./public/favicon.ico" />
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/css/libs/bootstrap/bootstrap.min.css">
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/fonts/ionicons-2.0.1/css/ionicons.min.css">
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/css/libs/slick/slick.min.css">
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/css/libs/magnific-popup/magnific-popup.min.css">
+    <!-- /webpackIgnore -->
+</head>
+
+<body>
+    {{block "content"}}
+    <div class="responsive home-2" id="wrapper-container">
+        <div id="main-content">
+            <div class="content-area">
+                <div class="page-title">
+                    <div class="main-top">
+                        <div class="overlay-top-header"></div>
+                        <div class="content container">
+                            <h1>
+                                {{title.top}}
+                            </h1>
+                            <div class="wrap-breadcrumb">
+                                <ul class="breadcrumbs">
+                                    <li>
+                                        <a href="./index.html">
+                                            {{title.left}}
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="breadcrum-icon">/</span>
+                                        {{title.right}}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-content sidebar-right">
+                    <div class="container">
+                        <div class="row">
+                            <main class="site-main col-lg-9">
+                                <div class="wrap-main-content">
+                                    <div class="bl-blog-detail">
+                                        <div class="head-blog">
+                                            <h2 class="title-blog-detail">
+                                                {{single_blog.title}}
+                                            </h2>
+                                            <div class="info-blog-detail">
+                                            </div>
+                                        </div>
+                                        <div class="media-blog-detail">
+                                            <div class="pic">
+                                                <img src="{{single_blog.img}}" alt="IMG">
+                                            </div>
+                                            <div class="date">
+                                                <span class="number">{{single_blog.date | getDay}}</span>
+                                                {{single_blog.date | monthDayFormat}}
+                                            </div>
+                                        </div>
+                                        <div class="text-blog-detail">
+                                            <div class="wrap-share-blog sticky-sidebar">
+                                                <div class="share">
+                                                    <span class="namefield">
+                                                        Share
+                                                    </span>
+                                                    <span class="socials">
+                                                        <!-- <a style="width:35px; height:40px; position:relative; top:10px; left:48px; "
+                                                                title="Share on Facebook" target="_blank"
+                                                                onclick="javascript:window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent('https://www.baidu.com')+'&t='+encodeURIComponent(document.title), 'newWindow', 'width=800, height=400','center');void(0);"> -->
+                                                        <a href="javascript:;" class="item-social" id="facebook-link"
+                                                            title="Share on Facebook" target="_blank">
+                                                            <i class="ion ion-social-facebook"></i>
+                                                        </a>
+                                                        <a href="javascript:;" class="item-social" id="twitter-link">
+                                                            <i class="ion ion-social-twitter"></i>
+                                                        </a>
+                                                        <a href="javascript:;" class="item-social" id="google-link">
+                                                            <i class="ion ion-social-googleplus"></i>
+                                                        </a>
+                                                        <!-- <a href="javascript:;" class="item-social">
+                                                                <i class="ion ion-social-vimeo"></i>
+                                                            </a> -->
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="content-blog">
+                                                {{@ single_blog.content}}
+
+                                                <div class="tags">
+                                                    <span class="name-field">Tags:</span>
+                                                    {{single_blog.tag}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                            <!-- 右侧边栏 -->
+                            {{include "./blog-aside.art"}}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    {{/block}}
+
+    {{include "./dialogs.art"}}
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/jquery/jquery.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/bootstrap/popper.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/bootstrap/bootstrap.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <!-- <script type="text/javascript" src="./public/js/libs/magnific-popup/jquery.magnific-popup.min.js"></script> -->
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/slick/slick.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <!-- <script type="text/javascript" src="./public/js/libs/isotope/isotope.pkgd.min.js"></script> -->
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/select2/select2.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/sticky-sidebar/theia-sticky-sidebar.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/thim-custom.min.js"></script>
+    <!-- /webpackIgnore -->
+    {{block "script"}}
+
+    {{/block}}
+</body>
+
+</html>

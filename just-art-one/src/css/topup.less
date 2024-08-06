@@ -1,0 +1,179 @@
+.new-content {
+
+    .ion-chevron-right {
+        margin-left : 0.5em;
+        margin-right: 0.5em;
+    }
+
+
+    .row {
+
+        .topup-dropdown {
+            margin: 10px 0;
+
+            .dropdown {
+                button {
+                    padding      : 16px 20px;
+                    border       : 1px solid rgb(82, 82, 82);
+                    border-radius: 10px;
+
+                    .fa-angle-down {
+                        margin-left: 10px;
+                    }
+                }
+
+                .dropdown-menu {
+                    li {
+                        padding: 10px;
+                    }
+
+                    li:hover {
+                        background-color: antiquewhite;
+                    }
+                }
+            }
+
+            .select-container {
+                position: relative;
+                display : inline-block;
+                width   : 100%;
+
+                select {
+                    -webkit-appearance   : none;
+                    -moz-appearance      : none;
+                    appearance           : none;
+                    padding              : 10px 15px;
+                    border               : 1px solid #ccc;
+                    border-radius        : 10px;
+                    font-size            : 16px;
+                    color                : red;
+                    background-color     : white;
+                    cursor               : pointer;
+                    // min-width         : 100px;
+                    width                : 80%;
+                    height               : 50px;
+                    text-align           : center;
+                    padding-right        : 20px;
+                }
+
+                select:focus {
+                    outline     : none;
+                    border-color: blue;
+                }
+
+                option {
+                    color: black;
+                }
+
+                .dropdown-icon {
+                    position : absolute;
+                    top      : 50%;
+                    right    : 23%;
+                    transform: translateY(-50%);
+                    font-size: 18px;
+                    color    : rgb(118, 118, 118);
+                    width    : 18px;
+                    height   : 18px;
+                }
+            }
+
+
+
+
+        }
+
+
+
+    }
+
+    .servers-list {
+        padding-top: 20px;
+
+        .left-servers-choice {
+            padding-bottom: 14px;
+        }
+
+        .server-name-group {
+            display  : flex;
+            flex-wrap: wrap;
+
+            .server-name-btn {
+                box-sizing   : border-box;
+                text-align   : center;
+                width        : 20%;
+                border       : 1px solid #111;
+                border-radius: 10px;
+                height       : 40px;
+                line-height  : 40px;
+                margin       : 4px;
+                cursor       : pointer;
+            }
+        }
+    }
+
+
+
+    .topup-pathway-group {
+        display  : flex;
+        flex-wrap: wrap;
+
+        .topup-pathway-btn {
+            box-sizing   : border-box;
+            text-align   : center;
+            width        : 20%;
+            border       : 1px solid #111;
+            border-radius: 10px;
+            height       : 40px;
+            line-height  : 40px;
+            margin       : 4px;
+            cursor       : pointer;
+        }
+    }
+
+    .amount-div {
+        margin-bottom: 60px;
+
+        .amount-group {
+            display        : flex;
+            justify-content: center;
+            flex-wrap      : wrap;
+            width          : 100%;
+
+            .amount-btn {
+                box-sizing   : border-box;
+                text-align   : center;
+                width        : 40%;
+                border       : 1px solid #111;
+                border-radius: 10px;
+                height       : 60px;
+                line-height  : 60px;
+                margin       : 20px 5%;
+                cursor       : pointer;
+            }
+        }
+
+        .amount-article {
+            .amount-notice-title {
+                font-size    : 18px;
+                font-weight  : 500;
+                color        : #111;
+                margin-bottom: 10px;
+            }
+
+            .amount-notice {
+                text-indent  : 1em;
+                margin-bottom: 20px;
+            }
+
+            .amount-btn-div {
+                text-align: center;
+
+                .amount-btn {
+                    width        : 80%;
+                    height       : 50px;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}

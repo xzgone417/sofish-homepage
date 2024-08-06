@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    {{block "head"}}
+    <title>SOFISH</title>
+    {{/block}}
+
+    <!-- webpackIgnore: true -->
+    <link rel="icon" type="image/png" href="./public/favicon.ico" />
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/css/libs/bootstrap/bootstrap.min.css">
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/fonts/ionicons-2.0.1/css/ionicons.min.css">
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/css/libs/slick/slick.min.css">
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <link rel="stylesheet" type="text/css" href="./public/css/libs/magnific-popup/magnific-popup.min.css">
+    <!-- /webpackIgnore -->
+</head>
+
+<body>
+    <div class="responsive home-2 blog1-page" id="wrapper-container">
+        {{include "./header.art"}}
+        <div id="main-content">
+            <div class="content-area">
+                <div class="page-title">
+                    <div class="main-top">
+                        <div class="overlay-top-header"></div>
+                        <div class="content container">
+                            <h1>
+                                {{title.top}}
+                            </h1>
+                            <div class="wrap-breadcrumb">
+                                <ul class="breadcrumbs">
+                                    <li>
+                                        <a href="./index.html">
+                                            {{title.left}}
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <span class="breadcrum-icon">/</span>
+                                        {{title.right}}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-content sidebar-right">
+                    <div class="container">
+                        <div class="row">
+                            <main class="site-main col-lg-9">
+                                <div class="wrap-main-content">
+                                    <div class="blog-list thim-1-col vblog-layout-1">
+                                        {{each blog_list}}
+                                        <article class="item-blog image-item">
+                                            <div class="media-item">
+                                                <div class="pic">
+                                                    <a href="{{$value.link}}"><img src="{{$value.img}}" alt="IMG"></a>
+                                                </div>
+                                                <div class="date">
+                                                    <span class="number">{{$value.date | getDay}}</span>
+                                                    {{$value.date | monthDayFormat}}
+                                                </div>
+                                            </div>
+                                            <div class="text-item">
+                                                <h4 class="title">
+                                                    <a href="{{$value.link}}">
+                                                        {{$value.title}}
+                                                    </a>
+                                                </h4>
+                                                <div class="content">{{$value.desc}}</div>
+                                                <a href="{{$value.link}}" class="btn-learnmore btn-small shape-round">
+                                                    learn more
+                                                </a>
+                                            </div>
+                                        </article>
+                                        {{/each}}
+                                    </div>
+
+                                    <ul class="loop-pagination">
+                                        {{each pagination.blog_numbers item index}}
+                                        {{if pagination.current==item.num}} <li>
+                                            <a href="{{item.link}}" class="page-numbers current">
+                                                {{item.num}}
+                                            </a>
+                                        </li>{{else }} <li>
+                                            <a href="{{item.link}}" class="page-numbers">
+                                                {{item.num}}
+                                            </a>
+                                        </li>{{/if}}
+                                        {{/each}}
+                                        <li>
+                                            <a href="{{pagination.next_link}}" class="page-numbers next">
+                                                Next
+                                                <i class="ion ion-ios-arrow-thin-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </main>
+                            {{include "./blog-aside.art"}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{include "./footer.art"}}
+
+    </div>
+
+    {{include "./dialogs.art"}}
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/jquery/jquery.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/bootstrap/popper.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/bootstrap/bootstrap.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <!-- <script type="text/javascript" src="./public/js/libs/magnific-popup/jquery.magnific-popup.min.js"></script> -->
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/slick/slick.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <!-- <script type="text/javascript" src="./public/js/libs/isotope/isotope.pkgd.min.js"></script> -->
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/select2/select2.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/libs/sticky-sidebar/theia-sticky-sidebar.min.js"></script>
+    <!-- /webpackIgnore -->
+    <!-- webpackIgnore: true -->
+    <script type="text/javascript" src="./public/js/thim-custom.min.js"></script>
+    <!-- /webpackIgnore -->
+    {{block "script"}}
+
+    {{/block}}
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+{
+    "title": {
+        "top": "Single Blog",
+        "left": "Home",
+        "right": "Single Blog"
+    },
+    "single_blog": {
+        "title": "BANKSTERS – A UNIQUE NFT PROJECT & EXPERIENCE",
+        "img": "http://tmp-test.sofishgame.com/public/images/new-06.webp",
+        "date": "2023-06-13",
+        "tag": "Game",
+        "content": "<p>NFTs are everywhere nowadays, including in games. And that might be a pretty good thing if the newly released title Banksters is anything to go by.</p><p>A NFT-based trading game, it looks to offer an immersive experience that gamifies common elements of our everyday lives. Through Banksters, Lava Games has expanded on this niche genre by successfully ‘gamifying’ trading, making it more digestible to different audiences and traditional gamers.</p><!-- <div>--><!--  <img class='lazyautosizes lazyloaded' src='http://tmp-test.sofishgame.com/public/images/new-bg01.webp' data-srcset='http://tmp-test.sofishgame.com/public/images/new-bg01.webp 320w, http://tmp-test.sofishgame.com/public/images/new-bg01.webp 480w, http://tmp-test.sofishgame.com/public/images/new-bg01.webp 768w, http://tmp-test.sofishgame.com/public/images/new-bg01.webp 1024w, http://tmp-test.sofishgame.com/public/images/new-bg01.webp 1280w, http://tmp-test.sofishgame.com/public/images/new-bg01.webp 1440w' data-sizes='auto' sizes='948px' srcset='http://tmp-test.sofishgame.com/public/images/new-bg01.webp 320w, http://tmp-test.sofishgame.com/public/images/new-bg01.webp 480w, http://tmp-test.sofishgame.com/public/images/new-bg01.webp 768w, http://tmp-test.sofishgame.com/public/images/new-bg01.webp 1024w, http://tmp-test.sofishgame.com/public/images/new-bg01.webp 1280w, http://tmp-test.sofishgame.com/public/images/new-bg01.webp 1440w'>--><!-- </div>--><!--<p></p>--><p>NFTs are everywhere nowadays, including in games. And that might be a pretty good thing if the newly released title Banksters is anything to go by.</p><p>A NFT-based trading game, it looks to offer an immersive experience that gamifies common elements of our everyday lives. Through Banksters, Lava Games has expanded on this niche genre by successfully ‘gamifying’ trading, making it more digestible to different audiences and traditional gamers.</p><p>It’s focused around, as you might expect from the title, real-life economies and events – but is nowhere near as dry as that brief description makes it sound.</p><p>You as the player holds all the power, and have to adapt to the market condition of the token using a variety of in game abilities – likened to events and actions that have taken place in real life. By employing smart strategic decisions, you end up learning more about financial concepts, gain better financial literacy, and ultimately become more trading savvy – useful in and out of the game.</p><p>There are three main gameplay elements in Banksters. Mining, which allows you to dig for in-game tokens with default mining equipment.</p><p>Then there are Investment Runs, which are simulated trading experiences using real-life data – the amount of entries you can have is proportional to the prize pool (in real crypto). Players can use abilities during the invest runs too. For example – the ability titled ‘Elon’s Tweet’ was designed to emulate a real-world scenario where Elon Musk tweets about a coin to pump or dump for a short time, maximizing players’ results.</p><p>And third is Minting, where you can lease your Bankster to help other players – getting paid in the process. It’s worth noting that NFT avatars are the character you play as and use to help other players too.</p><p>With the rules being fairly simple, the learning curve is undoubtedly challenging for both newbies and veterans.</p><p>Ultimately Banksters offers an experience where you can actively influence the outcome of all the investments you make – and reap the benefits of doing so.</p><p>And third is Minting, where you can lease your Bankster to help other players – getting paid in the process. It’s worth noting that NFT avatars are the character you play as and use to help other players too.</p><p>With the rules being fairly simple, the learning curve is undoubtedly challenging for both newbies and veterans.</p><p>Ultimately Banksters offers an experience where you can actively influence the outcome of all the investments you make – and reap the benefits of doing so.</p><p>Yes, there’s always a chance that the markets will go in an unexpected direction. But Banksters makes sure you can always step in and recover your investments, making it a real thrill in the process.</p><p>So if you’re looking to play something more than a little different, Banksters is now available on Google Play – and you can keep an eye out for when it’ll arrive on iOS by following the game’s official Twitter, Telegram, Discord, and Medium accounts. And website of course.</p>"
+    },
+    "aside_list": [
+        {
+            "link": "./single-blog-01.html",
+            "title": "STUDY: MILLENNIALS SPEND …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-01.jpeg",
+            "date": "2023-03-14"
+        },
+        {
+            "link": "./single-blog-02.html",
+            "title": "STEPS TO PROTECTING …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-02.webp",
+            "date": " 2023-06-19"
+        },
+        {
+            "link": "./single-blog-03.html",
+            "title": "8 BALL MASTER CUES OFF …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-03.webp",
+            "date": "2023-05-24"
+        },
+        {
+            "link": "./single-blog-04.html",
+            "title": "WHAT FAN STUDIO ARE …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-04.webp",
+            "date": "2023-08-15"
+        },
+        {
+            "link": "./single-blog-05.html",
+            "title": "ACCLAIMED SURVIVAL …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-05.webp",
+            "date": "2023-05-12"
+        },
+        {
+            "link": "./single-blog-06.html",
+            "title": "BANKSTERS – A UNIQUE NFT …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-06.webp",
+            "date": "2023-06-13"
+        }
+    ]
+}

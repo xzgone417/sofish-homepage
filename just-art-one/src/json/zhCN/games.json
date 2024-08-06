@@ -1,0 +1,53 @@
+{
+    "game_list": [
+        {
+            "title": "Oil Era - Idle Mining Tycoon",
+            "gp_link": "https://play.google.com/store/apps/details?id=com.aliensidea.oiltycoon.overseas&pcampaignid=web_share",
+            "ios_link": "",
+            "img": "http://tmp-test.sofishgame.com/public/images/game_list_01.webp",
+            "desc": ""
+        },
+        {
+            "title": "佣兵小镇",
+            "gp_link": "https://play.google.com/store/apps/details?id=com.sofish.adventurecity.android",
+            "ios_link": "",
+            "img": "http://tmp-test.sofishgame.com/public/images/game_list_02.webp",
+            "desc": ""
+        },
+        {
+            "title": "我的小海島",
+            "gp_link": "https://play.google.com/store/apps/details?id=com.sofish.myisland",
+            "ios_link": "",
+            "img": "http://tmp-test.sofishgame.com/public/images/game_list_03.webp",
+            "desc": ""
+        },
+        {
+            "title": "Ludo Land - Dice Board Game",
+            "gp_link": "https://play.google.com/store/apps/details?id=com.sofish.ludoland&pcampaignid=web_share",
+            "ios_link": "",
+            "img": "http://tmp-test.sofishgame.com/public/images/game_list_04.webp",
+            "desc": ""
+        },
+        {
+            "title": " Paper Wars:The Campfire",
+            "gp_link": "https://play.google.com/store/apps/details?id=com.sofish.campfire.herowars",
+            "ios_link": "",
+            "img": "http://tmp-test.sofishgame.com/public/images/game_list_05.webp",
+            "desc": ""
+        },
+        {
+            "title": "Dancing Girls - Sticker Tiles",
+            "gp_link": "https://play.google.com/store/apps/details?id=piano.musicgames.EDM.DancingGirls",
+            "ios_link": "",
+            "img": "http://tmp-test.sofishgame.com/public/images/game_list_06.webp",
+            "desc": ""
+        },
+        {
+            "title": " Ever Legend: Idle RPG",
+            "gp_link": "https://play.google.com/store/apps/details?id=com.sofish.anr.brawlknight&hl=en&gl=us",
+            "ios_link": "",
+            "img": "http://tmp-test.sofishgame.com/public/images/game_list_07.webp",
+            "desc": ""
+        }
+    ]
+}

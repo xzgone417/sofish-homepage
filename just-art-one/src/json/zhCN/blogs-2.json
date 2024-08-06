@@ -1,0 +1,85 @@
+{
+    "title": {
+        "top": "Blogs2",
+        "left": "Home",
+        "right": "Blog"
+    },
+    "blog_list": [
+        {
+            "link": "./single-blog-04.html",
+            "title": " WHAT FAN STUDIO ARE …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-04.webp",
+            "month": "August, 2023",
+            "day": "15",
+            "desc": "You might read the words ‘gamification strategies’ and feel some sense of trepidation and unease, but don’t. Fan Studio is ahead of the curve when it comes to such strategies, and uses them in a range of exciting ways – for clients and consumers alike."
+        },
+        {
+            "link": "./single-blog-05.html",
+            "title": "ACCLAIMED SURVIVAL …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-05.webp",
+            "month": "May, 2023",
+            "day": "12",
+            "desc": "Doomsday: Last Survivors, IGG’s hit zombie survival game, has made the leap from mobile to PC."
+        },
+        {
+            "link": "./single-blog-06.html",
+            "title": "BANKSTERS – A UNIQUE NFT …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-06.webp",
+            "month": "June, 2023",
+            "day": "13",
+            "desc": "NFTs are everywhere nowadays, including in games. And that might be a pretty good thing if the newly released title Banksters is anything to go by."
+        }
+    ],
+    "pagination": {
+        "current": 2,
+        "blog_numbers": [
+            {
+                "num": 1,
+                "link": "./blogs.html"
+            },
+            {
+                "num": 2,
+                "link": "./blogs-2.html"
+            }
+        ],
+        "next_link": "./blogs.html"
+    },
+        "aside_list": [
+        {
+            "link": "./single-blog-01.html",
+            "title": "STUDY: MILLENNIALS SPEND …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-01.jpeg",
+            "date": "2023-03-14"
+        },
+        {
+            "link": "./single-blog-02.html",
+            "title": "STEPS TO PROTECTING …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-02.webp",
+            "date": " 2023-06-19"
+        },
+        {
+            "link": "./single-blog-03.html",
+            "title": "8 BALL MASTER CUES OFF …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-03.webp",
+            "date": "2023-05-24"
+        },
+        {
+            "link": "./single-blog-04.html",
+            "title": "WHAT FAN STUDIO ARE …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-04.webp",
+            "date": "2023-08-15"
+        },
+        {
+            "link": "./single-blog-05.html",
+            "title": "ACCLAIMED SURVIVAL …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-05.webp",
+            "date": "2023-05-12"
+        },
+        {
+            "link": "./single-blog-06.html",
+            "title": "BANKSTERS – A UNIQUE NFT …",
+            "img": "http://tmp-test.sofishgame.com/public/images/new-06.webp",
+            "date": "2023-06-13"
+        }
+    ]
+}
