@@ -1,0 +1,127 @@
+.site-footer {
+    width           : 100%;
+    min-height      : 20vh;
+    background-color: #000000;
+    color           : #fff;
+    padding-top     : 5vh;
+    font-size       : 16px;
+
+    .footer-menu-navigation {
+        text-align     : center;
+        position       : relative;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        width          : 100%;
+
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+        }
+
+        .footer-menu-link {
+            text-align   : center;
+            font-size    : 1.2rem;
+            color        : #ded8d6;
+            padding-left : 1vw;
+            padding-right: 3vw;
+            line-height  : 1.5em;
+
+            @media screen and (max-width:1300px) {
+                font-size: 1.4rem;
+            }
+
+            .clang-link {
+                color: #808080;
+
+                &.clang-link-active {
+                    color: #fff;
+                }
+            }
+
+            .separation {
+                margin-left : 0.5em;
+                margin-right: 0.5em;
+            }
+        }
+
+        .footer-logo {
+            vertical-align: bottom;
+            margin-right  : 8%;
+
+        }
+
+        .mobile-footer-logo {
+            display: none;
+        }
+    }
+
+    .footer-desc {
+        text-align    : center;
+        font-size     : 1.5rem;
+        color         : #ded8d6;
+        padding-top   : 5vh;
+        padding-bottom: 5vh;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .site-footer {
+        width           : 100vw;
+        min-height      : 30vh;
+        background-color: #000000;
+        color           : #fff;
+        padding-top     : 2vh;
+
+        .footer-menu-navigation {
+            text-align     : center;
+            justify-content: flex-start;
+            text-align     : left;
+
+            .footer-menu-link {
+                width        : 100%;
+                display      : block;
+                text-align   : left;
+                font-size    : 16px;
+                color        : #fff;
+                padding-left : 1em;
+                padding-right: 2em;
+                line-height  : 2em;
+            }
+
+            .footer-clang {
+                position: absolute;
+                right   : 0;
+                top     : 0;
+            }
+
+            .footer-logo {
+                display: none;
+            }
+
+            .mobile-footer-logo {
+                display : block;
+                width   : 32vw;
+                height  : auto;
+                position: absolute;
+                right   : 2em;
+                bottom  : 0;
+
+                .mobile-footer-logo-img {
+                    width : 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .footer-desc {
+            text-align  : left;
+            font-size   : 16px;
+            color       : #fff;
+            padding-top : 3vh;
+            padding-left: 1em;
+        }
+
+
+    }
+}

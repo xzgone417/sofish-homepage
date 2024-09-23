@@ -1,0 +1,183 @@
+.orders-container {
+    width     : 100%;
+    height    : 100%;
+    text-align: center;
+
+    h5 {
+        font-size     : 1.6rem;
+        padding-top   : 1%;
+        padding-bottom: 2%;
+        letter-spacing: 0.05rem;
+        word-spacing  : 0.08rem;
+
+        @media screen and (max-width:768px) {
+            padding-bottom: 2vh;
+        }
+    }
+
+    .orders-th-ul {
+        display        : flex;
+        justify-content: flex-start;
+        align-items    : center;
+        width          : 100%;
+        padding        : 0.5% 2%;
+
+    }
+
+    .orders-td-ul {
+        width           : 100%;
+        height          : 66%;
+        padding         : 0.5% 2%;
+        overflow-y      : auto;
+        overflow-x      : hidden;
+        background-color: #fff;
+        color           : #000;
+
+        @media screen and (min-width:769px) {
+            &::-webkit-scrollbar {
+                width : 8px;
+                height: 8px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background   : transparent;
+                margin-bottom: 16px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background   : #d3d3d3;
+                border-radius: 16px;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            width        : 98%;
+            height       : 66%;
+            padding      : 0.5% 0%;
+            margin       : auto;
+            border-radius: 1rem;
+        }
+
+    }
+
+
+    .orders-li {
+        width          : 100%;
+        padding        : 1% 0;
+        display        : flex;
+        justify-content: flex-start;
+        align-items    : center;
+        text-align     : center;
+        font-size      : 1rem;
+
+        @media screen and (max-width:768px) {
+            padding: 2vh 0;
+        }
+
+        .code {
+            flex              : 6;
+            overflow-wrap     : anywhere;
+            display           : -webkit-box;
+            line-clamp        : 3;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow          : hidden;
+            text-overflow     : ellipsis;
+            padding           : 0 1%;
+            text-align        : center;
+        }
+
+        .server {
+            flex              : 5;
+            overflow-wrap     : anywhere;
+            display           : -webkit-box;
+            line-clamp        : 2;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow          : hidden;
+            text-overflow     : ellipsis;
+            padding           : 0 1%;
+            text-align        : center;
+        }
+
+        .role {
+            flex         : 4;
+            white-space  : nowrap;
+            overflow     : hidden;
+            text-overflow: ellipsis;
+            padding      : 0 1%;
+            text-align   : center;
+        }
+
+        .charge {
+            flex         : 3;
+            overflow-wrap: anywhere;
+            padding      : 0 1%;
+            text-align   : center;
+        }
+
+
+
+        .code-th {
+            flex      : 6;
+            padding   : 0 1%;
+            text-align: center;
+        }
+
+        .server-th {
+            flex      : 5;
+            padding   : 0 1%;
+            text-align: center;
+        }
+
+        .role-th {
+            flex      : 4;
+            padding   : 0 1%;
+            text-align: center;
+        }
+
+        .charge-th {
+            flex      : 3;
+            padding   : 0 1%;
+            text-align: center;
+        }
+
+        .copy-div-th {
+            width: 7rem;
+
+        }
+
+        .copy-div {
+            width     : 7rem;
+            text-align: right;
+
+            .copy-btn {
+                background-color: red;
+                border-radius   : 0.8rem;
+                color           : #fff;
+                padding         : 0.5rem 1rem;
+                max-width       : 90%;
+                text-align      : center;
+            }
+
+            .copied-btn {
+                background   : rgb(143, 143, 143);
+                border-radius: 0.8rem;
+                color        : #fff;
+                padding      : 0.5rem 1rem;
+                max-width    : 90%;
+                text-align   : center;
+            }
+        }
+    }
+
+    .orders-pagination-container {
+        width  : 100%;
+        padding: 3% 0;
+
+        @media screen and (max-width:768px) {
+            padding: 3vh 0;
+        }
+    }
+
+}

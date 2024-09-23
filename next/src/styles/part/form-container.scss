@@ -1,0 +1,175 @@
+.form-container {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+    form {
+        width: 75%;
+
+        @media screen and (max-width:768px) {
+            width: 84%;
+        }
+
+        .form-row {
+            position: relative;
+
+            .the-input {
+                width           : 100%;
+                border-radius   : 6px;
+                background-color: #eee;
+                height          : 3.6em;
+                text-indent     : 1em;
+                margin-bottom   : 1.2em;
+                padding-right   : 5em;
+
+                &.error {
+                    border: 1px solid red;
+                }
+
+                @media screen and (max-width:768px) {
+                    margin-bottom   : 3vh;
+                    border          : 1px solid #eee;
+                    background-color: #fff;
+                }
+            }
+
+            .password-eye {
+                font-size: 1.2em;
+                position : absolute;
+                right    : 0.6em;
+                top      : 0.85em;
+                color    : #4d4d4d;
+                cursor   : pointer;
+            }
+
+            .send-verification-code {
+                font-size       : 0.8em;
+                max-height      : 3em;
+                position        : absolute;
+                right           : 0.5em;
+                top             : 0.85em;
+                background-color: #3470f1;
+                border-radius   : 10px;
+                color           : #fff;
+                padding         : 0.5em 1em;
+                max-width       : 10em;
+            }
+
+            .history-btn {
+                position: absolute;
+                top     : 1em;
+                right   : 1em;
+                z-index : 65;
+            }
+
+            .history-ul {
+                font-size       : 0.8em;
+                position        : absolute;
+                top             : 4em;
+                left            : 0;
+                width           : 100%;
+                z-index         : 32;
+                background-color: rgba($color: #ffffff, $alpha: 1);
+                border-radius   : 10px;
+                box-shadow      : 0 8px 16px rgba(0, 0, 0, 0.2);
+
+                .history-li {
+                    height      : 3.6em;
+                    line-height : 3.6em;
+                    cursor      : pointer;
+                    word-spacing: 0.08em;
+
+
+                    &:hover {
+                        background-color: #ddd;
+                        border-radius   : 10px;
+                    }
+
+                    &.selected {
+                        background-color: #b3d4fc;
+                        border-radius   : 10px;
+                    }
+                }
+            }
+        }
+
+        .form-submit-row {
+            padding-top: 1rem;
+
+            .submit-btn {
+                width           : 60%;
+                height          : 3em;
+                background-color: red;
+                border-radius   : 10px;
+                color           : #fff;
+            }
+
+            .register-btn {
+                width           : 90%;
+                height          : 3em;
+                background-color: red;
+                border-radius   : 10px;
+                color           : #fff;
+                margin-bottom   : 2vh;
+            }
+        }
+
+        .lost-password {
+            text-align                     : right;
+            letter-spacing                 : 0.05rem;
+            word-spacing                   : 0.08rem;
+            margin-bottom                  : 1em;
+            cursor                         : pointer;
+            // font-size     : 1.4rem;
+            // @media screen and (max-width:768px) {
+            //     font-size: 1.4rem;
+            // }
+        }
+
+        .checkbox-row {
+            text-align   : left;
+            margin-bottom: 1.2em;
+
+            // font-size    : 16px;
+            // @media screen and (max-width:768px) {
+            //     font-size: 1.4rem;
+            // }
+
+            input[type="checkbox"] {
+                // font-size     : 1.4rem;
+                vertical-align: text-top;
+            }
+
+            span {
+                margin-left: 0.5em;
+            }
+        }
+
+        .agreement-row {
+            text-align: center;
+            margin    : 1.5em 0;
+            font-size : 1rem;
+
+            @media screen and (max-width:768px) {
+                font-size: 1.2rem;
+            }
+
+            input[type="checkbox"] {
+                font-size     : 1.4rem;
+                vertical-align: text-top;
+            }
+
+            .agree-span {
+                margin-left   : 0.5em;
+                word-spacing  : 0.08em;
+                letter-spacing: 0.08em;
+                line-height   : 1.5em;
+
+                .agreement-span {
+                    padding-left: 1em;
+                    color       : orange;
+                }
+            }
+        }
+    }
+}

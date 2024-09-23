@@ -1,0 +1,224 @@
+.about-site {
+    min-height: 77vh;
+    width     : 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-size : 16px;
+
+    .about-bg-section {
+        width            : 100%;
+        height           : 50vh;
+        background-repeat: no-repeat;
+        background-size  : cover;
+        color            : #fff;
+        display          : flex;
+        justify-content  : left;
+        align-items      : center;
+        position         : relative;
+
+        @media screen and (min-width:768px) {
+            min-height: 555px;
+        }
+
+        .about-bg-text {
+            width     : 100%;
+            text-align: center;
+
+            h2 {
+                width         : 100%;
+                text-align    : center;
+                font-size     : 10rem;
+                font-weight   : 400;
+                letter-spacing: 0.2rem;
+                word-spacing  : 0.5rem;
+
+                @media screen and (max-width:768px) {
+                    font-size: 6rem;
+                }
+            }
+        }
+
+    }
+
+    .about-content {
+        background-repeat  : no-repeat;
+        background-size    : cover;
+        position           : relative;
+        background-position: center;
+
+        .about-content-title {
+            padding: 5% 0 0% 10%;
+            z-index: 3;
+
+            @media screen and (max-width:768px) {
+                padding-left: 0;
+                text-align  : center;
+            }
+
+            .about-content-title-h2 {
+                font-size     : 6.5rem;
+                font-weight   : 400;
+                padding-bottom: 1rem;
+                letter-spacing: 0.01em;
+                word-spacing  : 0.01em;
+
+                @media screen and (max-width:768px) {
+                    font-size: 4.2rem;
+                }
+            }
+
+            .about-content-title-desc {
+                text-indent   : 1em;
+                font-size     : 1.6rem;
+                letter-spacing: 0.05em;
+                word-spacing  : 0.1em;
+            }
+        }
+
+        .mb-about-content-desc {
+            display: none;
+            z-index: 3;
+
+            @media screen and (max-width:768px) {
+                padding-top    : 5vh;
+                display        : flex;
+                justify-content: center;
+
+            }
+
+            .about-content-desc-p {
+                width         : 80vw;
+                letter-spacing: 0.05em;
+                word-spacing  : 0.1em;
+                text-align    : center;
+                line-height   : 1.4em;
+            }
+        }
+
+        .about-main-content {
+            width          : 100%;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+            padding        : 5%;
+            padding-bottom : 10%;
+            z-index        : 3;
+
+            @media screen and (max-width:768px) {
+                padding-bottom: 10vh;
+            }
+
+            .about-slider-section {
+                width: 68vw;
+
+                @media screen and (max-width:768px) {
+                    width: 92vw;
+                }
+
+                .slider-block {
+                    padding: 0 1%;
+
+                    .slider-container {
+                        display        : flex;
+                        justify-content: center;
+                        align-items    : flex-start;
+                        align-content  : flex-start;
+                        width          : 98%;
+                        border-radius  : 16px;
+
+                        // .slider-images {
+                        //     display        : flex;
+                        //     justify-content: space-between;
+                        //     align-items    : flex-start;
+                        //     align-content  : flex-start;
+                        //     flex-wrap      : wrap;
+                        //     width          : 100%;
+                        //     border-radius  : 16px;
+
+                        //     .about-img {
+                        //         display          : block;
+                        //         width            : 48%;
+                        //         aspect-ratio     : 600/340;
+                        //         border-radius    : 16px;
+                        //         background-repeat: no-repeat;
+                        //         background-size  : cover;
+                        //         margin-bottom    : 1rem;
+
+                        //         .about-img-c {
+                        //             border-radius: 16px;
+                        //         }
+                        //     }
+                        // }
+
+                        .slider-video-div {
+                            display      : block;
+                            width        : 100%;
+                            aspect-ratio : 750/450;
+                            border-radius: 16px;
+
+                            .slider-video {
+                                border-radius: 16px;
+                                width        : 100%;
+                                height       : 100%;
+                            }
+                        }
+
+
+                        .link-container {
+                            display: inline-block;
+                            width  : 100%;
+                            height : 100%;
+                        }
+                    }
+
+                }
+
+                .my-slick-thumb {
+                    bottom: -8vh;
+
+                    li {
+                        width : auto;
+                        height: auto;
+
+                        .my-slider-dot {
+                            background-color: rgb(241, 238, 238);
+                            border-radius   : 12px;
+                            height          : 1.3rem;
+                            width           : 4rem;
+                        }
+
+                        &.slick-active {
+                            .my-slider-dot {
+                                background-color: red;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+            .about-content-desc-section {
+                display        : flex;
+                justify-content: flex-end;
+                align-items    : center;
+                padding-left   : 2em;
+
+                @media screen and (max-width:768px) {
+                    display: none;
+                }
+
+                .about-content-desc-p {
+                    font-size     : 1.4rem;
+                    text-indent   : 1em;
+                    width         : 100%;
+                    letter-spacing: 0.05em;
+                    word-spacing  : 0.1em;
+                    line-height   : 1.5em;
+                }
+            }
+        }
+
+
+    }
+}

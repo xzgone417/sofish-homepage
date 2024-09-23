@@ -1,0 +1,382 @@
+.user-center-site {
+    width            : 100%;
+    overflow         : hidden;
+    padding-top      : 75px;
+    min-height       : 88vh;
+    font-size        : 16px;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+    background-repeat: no-repeat;
+    background-size  : cover;
+    position         : relative;
+
+    &.logging::after {
+        content   : '';
+        position  : absolute;
+        bottom    : 0;
+        left      : 0;
+        width     : 100%;
+        height    : 3vh;
+        background: linear-gradient(to top, rgba(73, 73, 73, 0.9), rgba(0, 0, 0));
+        z-index   : 0;
+        filter    : blur(1px);
+    }
+
+    @media screen and (max-width:768px) {
+        padding-top: 60px;
+    }
+
+    .user-section {
+        width             : 70%;
+        height            : 66vh;
+        border-radius     : 16px;
+        display           : flex;
+        justify-content   : flex-start;
+        // align-items    : flex-start;
+
+        @media screen and (max-width:768px) {
+            min-height    : 88vh;
+            height        : auto;
+            width         : 100%;
+            flex-direction: column;
+            border-radius : 0;
+        }
+
+        .left-user-container {
+            width                    : 25%;
+            height                   : 66vh;
+            color                    : #fff;
+            border-top-left-radius   : 16px;
+            border-bottom-left-radius: 16px;
+            display                  : flex;
+            flex-direction           : column;
+            justify-content          : space-between;
+            align-items              : center;
+            background-repeat        : no-repeat;
+            background-size          : cover;
+            background-position      : center;
+
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+
+            .top-up-div {
+                padding: 8% 10%;
+                width  : 100%;
+
+                p {
+                    text-align: left;
+                    font-size : 1.5rem;
+                }
+
+                .top-up-btn-div {
+                    padding-top: 8%;
+                    text-align : center;
+
+                    .top-up-btn {
+                        font-size     : 2.1vw;
+                        font-style    : italic;
+                        background    : linear-gradient(to top, #ff9d00, #ffc800 50%, #ff9d00);
+                        color         : #000000;
+                        font-weight   : 700;
+                        letter-spacing: 0.2em;
+                        word-spacing  : 0.1em;
+                        padding       : 4% 7%;
+                        border        : none;
+                        border-radius : 10px;
+                        box-shadow    : 4px 4px 8px rgba(0, 0, 0, 0.3);
+                        text-shadow   :
+                            1px 1px 0 #ffffff,
+                            -1px 1px 0 #ffffff,
+                            1px -1px 0 #ffffff,
+                            -1px -1px 0 #ffffff,
+                            1px 0 0 #ffffff,
+                            -1px 0 0 #ffffff,
+                            0 1px 0 #ffffff,
+                            0 -1px 0 #ffffff,
+                            1px 1px 0 #ffffff,
+                            -1px 1px 0 #ffffff,
+                            1px -1px 0 #ffffff,
+                            -1px -1px 0 #ffffff;
+                        text-transform: uppercase;
+                        cursor        : pointer;
+                        outline       : none;
+                        transition    : all 0.3s ease;
+                    }
+
+                    .top-up-btn:hover {
+                        background: linear-gradient(135deg, #ffc800, #f7a400);
+                    }
+                }
+
+            }
+
+
+        }
+
+        .right-user-container {
+            width                     : 75%;
+            height                    : 100%;
+            background-color          : #fff;
+            border-top-right-radius   : 16px;
+            border-bottom-right-radius: 16px;
+
+            @media screen and (max-width:768px) {
+                background-color: transparent;
+                color           : #fff;
+                border-radius   : 0;
+                width           : 100%;
+            }
+
+            .mb-center-title {
+                display        : none;
+                justify-content: space-between;
+                align-items    : center;
+                padding-bottom : 3vh;
+
+                @media screen and (max-width:768px) {
+                    display: flex;
+                }
+
+                .mb-center-name {
+                    text-align: left;
+                    color     : #fff;
+                    padding   : 2vh 5vw;
+
+                    .total-title {
+                        font-size  : 2rem;
+                        font-weight: 500;
+                        cursor     : pointer;
+                    }
+
+                    .separation {
+                        font-size   : 2rem;
+                        margin-left : 0.3em;
+                        margin-right: 0.3em;
+                        font-weight : 400;
+                    }
+
+                    .current-title {
+                        font-size  : 1.6rem;
+                        font-weight: 400;
+                    }
+
+                }
+
+                .back {
+                    font-size     : 8vw;
+                    word-spacing  : 0.1em;
+                    letter-spacing: 0.08em;
+                    padding-right : 3vw;
+                }
+            }
+
+            .user-about-div {
+                width          : 100%;
+                display        : flex;
+                justify-content: space-between;
+                align-items    : center;
+                padding        : 2% 3%;
+                position       : relative;
+
+                .user-info-div {
+                    max-height     : 20%;
+                    flex           : 1;
+                    display        : flex;
+                    justify-content: flex-start;
+                    align-items    : center;
+
+
+
+                    @media screen and (max-width:768px) {
+                        min-height  : 12vh;
+                        padding     : 2vh 3vw;
+                        padding-left: 5vw;
+                    }
+
+                    .user-info-avatar {
+                        width : 4rem;
+                        height: auto;
+
+                        @media screen and (max-width:768px) {
+                            width: 16vw;
+                        }
+
+                        border-radius : 10%;
+
+                    }
+
+                    .user-info-description {
+                        padding-left  : 1em;
+                        letter-spacing: 0.08em;
+                        word-spacing  : 0.1em;
+                        font-size     : 1rem;
+
+                        @media screen and (max-width:768px) {
+                            font-size: 4vw;
+                        }
+
+                        .user-info-vip {
+                            font-size  : 1.2em;
+                            color      : #ffba30;
+                            line-height: 1.5em;
+                        }
+
+                        .user-info-name {
+                            font-size  : 0.9em;
+                            line-height: 1.5em;
+                        }
+
+                        .user-info-id {
+                            font-size  : 0.8em;
+                            line-height: 1em;
+                        }
+                    }
+
+                    .top-up-btn-link {
+                        position      : absolute;
+                        right         : 0;
+                        top           : 0;
+                        font-size     : 4vw;
+                        font-style    : italic;
+                        background    : linear-gradient(to top, #ff9d00, #ffc800 50%, #ff9d00);
+                        color         : #000000;
+                        font-weight   : 700;
+                        letter-spacing: 0.2em;
+                        word-spacing  : 0.1em;
+                        padding       : 1rem 2rem;
+                        border        : none;
+                        border-radius : 10px;
+                        box-shadow    : 4px 4px 8px rgba(0, 0, 0, 0.3);
+                        text-shadow   :
+                            1px 1px 0 #ffffff,
+                            -1px 1px 0 #ffffff,
+                            1px -1px 0 #ffffff,
+                            -1px -1px 0 #ffffff,
+                            1px 0 0 #ffffff,
+                            -1px 0 0 #ffffff,
+                            0 1px 0 #ffffff,
+                            0 -1px 0 #ffffff,
+                            1px 1px 0 #ffffff,
+                            -1px 1px 0 #ffffff,
+                            1px -1px 0 #ffffff,
+                            -1px -1px 0 #ffffff;
+                        text-transform: uppercase;
+                        cursor        : pointer;
+                        outline       : none;
+                        transition    : all 0.3s ease;
+                        margin-right  : 4vw;
+                        z-index       : 27;
+                        display       : none;
+
+                        @media screen and (max-width:768px) {
+                            display: inline-block;
+                        }
+
+                        &:hover {
+                            background: linear-gradient(135deg, #ffc800, #f7a400);
+                        }
+
+                    }
+                }
+
+                .logout-btn {
+                    background-color: #e70000;
+                    border-radius   : 1em;
+                    color           : #fff;
+                    padding         : 0.8em 1.8em;
+                    letter-spacing  : 0.08em;
+                    word-spacing    : 0.1em;
+
+
+                    @media screen and (max-width:768px) {
+                        display: none;
+                    }
+
+                    &:hover {
+                        background: #fc2a2a
+                    }
+                }
+
+                &::after {
+                    content      : "";
+                    display      : block;
+                    position     : absolute;
+                    left         : 3%;
+                    width        : 94%;
+                    bottom       : 0;
+                    height       : 1px;
+                    background   : #d3d3d3;
+                    border-radius: 2px;
+
+                    @media screen and (max-width:768px) {
+                        height: 0;
+                    }
+                }
+            }
+
+
+            .user-content-container {
+                width : 100%;
+                height: 80%;
+
+                @media screen and (max-width:768px) {
+                    height    : auto;
+                    min-height: 60vh;
+
+                    padding-top: 3vh;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+.account-section {
+    width           : 60%;
+    min-height      : 60vh;
+    border-radius   : 16px;
+    background-color: #fff;
+
+    @media screen and (max-width:768px) {
+        width        : 100%;
+        border-radius: 0;
+        min-height   : 88vh;
+    }
+
+    .login-container {
+        width        : 100%;
+        height       : 100%;
+        border-radius: 16px;
+
+        @media screen and (max-width:768px) {
+            border-radius: 0;
+        }
+    }
+
+
+}
+
+.return-section {
+    padding-top   : 4vh;
+    padding-bottom: 6vh;
+    text-align    : center;
+    width         : 100%;
+    display       : none;
+
+    @media screen and (max-width:768px) {
+        display: block;
+    }
+
+    .return-btn {
+        color           : #fff;
+        background-color: #e70000;
+        font-size       : 1.8rem;
+        border-radius   : 0.8em;
+        padding         : 0.6em;
+        width           : 60%;
+    }
+}

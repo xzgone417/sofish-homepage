@@ -1,0 +1,206 @@
+.contact-site {
+    min-height: 77vh;
+    width     : 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-size : 16px;
+
+    .contact-bg-section {
+        width            : 100%;
+        height           : 50vh;
+        background-repeat: no-repeat;
+        background-size  : cover;
+        color            : #fff;
+        display          : flex;
+        justify-content  : center;
+        align-items      : center;
+        margin-bottom    : 2vh;
+        position         : relative;
+
+        @media screen and (min-width:768px) {
+            min-height: 555px;
+        }
+
+        .contact-bg-text {
+            // width     : 100%;
+            text-align: center;
+
+            h1 {
+                text-align    : center;
+                width         : 100%;
+                font-size     : 8rem;
+                letter-spacing: 0.1em;
+                word-spacing  : 0.1em;
+
+                @media screen and (max-width:768px) {
+                    font-size: 7rem;
+                }
+            }
+
+            .contact-logo {
+                width : 30rem;
+                height: auto;
+            }
+
+            .s-games {
+                display        : flex;
+                justify-content: space-between;
+                align-items    : center;
+                padding        : 0.2em 0.8em;
+                font-size      : 1.6rem;
+            }
+        }
+    }
+
+    .contact-content {
+        width            : 100vw;
+        aspect-ratio     : 1920/700;
+        min-height       : 670px;
+        display          : flex;
+        justify-content  : flex-start;
+        align-items      : center;
+        background-repeat: no-repeat;
+        background-size  : cover;
+        padding-bottom   : 5vh;
+
+        @media screen and (max-width:768px) {
+            min-height    : 60vh;
+            aspect-ratio  : auto;
+            padding-bottom: 5vh;
+            display       : block;
+        }
+
+        .contact-content-area {
+            width          : 60%;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+
+            @media screen and (max-width:768px) {
+                width: 100%;
+            }
+
+            .contact-content-text {
+                width     : 70%;
+                color     : #fff;
+                text-align: center;
+
+                @media screen and (max-width:768px) {
+                    width        : 100%;
+                    margin-bottom: 2vh;
+                }
+
+                h2 {
+                    font-size     : 5rem;
+                    margin-bottom : 1.6rem;
+                    letter-spacing: 0.1em;
+                    word-spacing  : 0.1em;
+
+                    @media screen and (max-width:768px) {
+                        font-size    : 3.5rem;
+                        margin-top   : 5vh;
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                span {
+                    font-size     : 1.3rem;
+                    color         : #cccccc;
+                    letter-spacing: 0.1em;
+                    word-spacing  : 0.1em;
+
+                    @media screen and (max-width:768px) {
+                        display      : inline-block;
+                        width        : 70%;
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+        }
+
+
+        .contact-form-section {
+            max-height  : 80%;
+            width       : 30%;
+            margin-right: 10%;
+
+            @media screen and (max-width:768px) {
+                width          : 100%;
+                display        : flex;
+                justify-content: center;
+                align-items    : flex-start;
+                margin-right   : 0;
+            }
+
+            form {
+                font-size       : 1.2rem;
+                padding         : 2%;
+                background-color: rgb(255, 255, 255);
+                border-radius   : 10px;
+
+                @media screen and (max-width:768px) {
+                    font-size: 1.5rem;
+                    width    : 90%;
+                    font-size: 1.5rem;
+                }
+
+                .form-row {
+                    width          : 100%;
+                    display        : flex;
+                    justify-content: center;
+                    align-items    : center;
+
+                    .row-p {
+                        width: 50%;
+                    }
+                }
+
+                .contact-label {
+                    padding: 2%;
+
+                    .label-p {
+                        text-indent   : 0.5em;
+                        padding-bottom: 0.4em;
+                    }
+                }
+
+                .contact-input {
+                    width           : 100%;
+                    border-radius   : 5px;
+                    background-color: #eee;
+                    border          : #eee;
+                    height          : 3em;
+                    text-indent     : 1em;
+                }
+
+                textarea {
+                    width           : 100%;
+                    border-radius   : 6px;
+                    background-color: #eee;
+                    border          : #eee;
+                    padding-top     : 0.5em;
+                    text-indent     : 1em;
+                }
+
+                .contact-submit-label {
+                    text-align    : center;
+                    padding-top   : 1em;
+                    padding-bottom: 6%;
+
+                    .submit-btn {
+                        width           : 80%;
+                        height          : 3em;
+                        background-color: red;
+                        border-radius   : 10px;
+                        color           : #fff;
+                    }
+                }
+
+
+                sup {
+                    color: red;
+                }
+            }
+        }
+    }
+}

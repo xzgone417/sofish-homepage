@@ -1,0 +1,95 @@
+@media screen and (min-width:769px) {
+    .user-menu-ul {
+        height: 60%;
+        width : 100%;
+
+        .user-menu-li {
+            text-align: center;
+            position  : relative;
+            padding   : 4%;
+            font-size : 1.4rem;
+            cursor    : pointer;
+
+            &::after {
+                content      : "";
+                display      : block;
+                position     : absolute;
+                left         : 10%;
+                width        : 80%;
+                bottom       : 0;
+                height       : 1px;
+                background   : linear-gradient(to right, transparent 0%, #fff 25%, #fff 75%, transparent 100%);
+                border-radius: 2px;
+            }
+
+            &.li-active {
+                color: #f7a400;
+
+                &::after {
+                    content      : "";
+                    display      : block;
+                    position     : absolute;
+                    left         : 10%;
+                    bottom       : 0;
+                    width        : 80%;
+                    height       : 1px;
+                    background   : linear-gradient(to right, transparent 0%, #ffc800 25%, #ffc800 75%, transparent 100%);
+                    border-radius: 2px;
+                }
+            }
+
+            // &:last-child {
+            //     &::after {
+            //         content: "";
+            //         height : 0;
+            //     }
+            // }
+        }
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .user-menu-ul {
+        width  : 100%;
+        padding: 3vh 0;
+
+        .user-menu-li {
+            text-align: center;
+            position  : relative;
+            padding   : 4%;
+            font-size : 2.4rem;
+            cursor    : pointer;
+            color     : #fff;
+
+            &::after {
+                content      : "";
+                display      : block;
+                position     : absolute;
+                left         : 10%;
+                width        : 80%;
+                bottom       : 0;
+                height       : 1px;
+                background   : linear-gradient(to right, transparent 0%, #fff 25%, #fff 75%, transparent 100%);
+                border-radius: 2px;
+            }
+
+            &.li-active {
+                color: #f7a400;
+
+                &::after {
+                    content      : "";
+                    display      : block;
+                    position     : absolute;
+                    left         : 10%;
+                    bottom       : 0;
+                    width        : 80%;
+                    height       : 1px;
+                    background   : linear-gradient(to right, transparent 0%, #ffc800 25%, #ffc800 75%, transparent 100%);
+                    border-radius: 2px;
+                }
+            }
+        }
+
+    }
+}

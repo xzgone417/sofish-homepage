@@ -1,0 +1,92 @@
+.btn-back-to-top {
+    font-size      : 2rem;
+    color          : #fff;
+    text-align     : center;
+    line-height    : 3rem;
+    background     : #e40914;
+    width          : 3rem;
+    height         : 3rem;
+    position       : fixed;
+    bottom         : 4vh;
+    right          : 2vw;
+    cursor         : pointer;
+    transition     : all 0.3s;
+    z-index        : 91;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    border-radius  : 0.5rem;
+
+    @media screen and (max-width:768px) {
+        font-size  : 5vw;
+        line-height: 10vw;
+        width      : 10vw;
+        height     : 10vw;
+    }
+
+    &:hover {
+        background: #b30710;
+    }
+
+    &.scrolldown {
+        transform: translateY(0);
+    }
+}
+
+.loop-pagination {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
+    align-items    : center;
+
+    .page-numbers {
+        font-weight    : 300;
+        font-size      : 14px;
+        line-height    : 1.5;
+        color          : #111;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        width          : 39px;
+        height         : 39px;
+        border-radius  : 50%;
+        border         : 1px solid #e1e1e1;
+        margin         : 5px;
+        transition     : all 0.2s;
+
+        &:hover {
+            border-color: #e40914;
+            color       : #e40914;
+        }
+
+        &.current {
+            background  : #e40914;
+            border-color: #e40914;
+            color       : #fff;
+        }
+
+        &.next {
+            font-weight   : 500;
+            font-size     : 14px;
+            line-height   : 1.5;
+            color         : #ffffff;
+            text-transform: uppercase;
+            display       : flex;
+            align-items   : center;
+            width         : auto;
+            height        : auto;
+            border-radius : none;
+            border        : none;
+            margin        : 9px;
+
+            i {
+                font-size  : 20px;
+                margin-left: 9px;
+            }
+
+            &:hover {
+                color: #e40914;
+            }
+        }
+    }
+}

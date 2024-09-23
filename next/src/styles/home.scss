@@ -1,0 +1,248 @@
+.home-site {
+    width     : 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-height: 77vh;
+    font-size : 16px;
+
+    @media screen and (min-width:769px) {
+        background-color: #000;
+    }
+
+
+
+    .home-bg-section {
+        position: relative;
+
+        @media screen and (min-width:769px) {
+            height: auto;
+        }
+
+
+        .home-bg-slider {
+
+            .home-bg-container {
+                width              : 100vw;
+                max-height         : 975px;
+                min-height         : 66vh;
+                background-size    : 100%;
+                background-repeat  : no-repeat;
+                background-position: center;
+
+                @media screen and (max-width:1300px) and (min-width:769px) {
+                    background-size: cover;
+                }
+
+                .logo-btns {
+                    position  : absolute;
+                    left      : 15%;
+                    top       : 15%;
+                    text-align: center;
+
+                    .home-bg-logo {
+                        width    : 24vw;
+                        min-width: 240px;
+                        height   : auto;
+                    }
+
+                    .logo-name {
+                        color    : #fff;
+                        font-size: 1.2rem;
+                        padding  : 0.2em 0;
+                    }
+
+                    .home-bg-btn {
+                        background     : linear-gradient(to top, #a80101 0, #ff0101 100%);
+                        color          : white;
+                        padding        : 0.8em 2em;
+                        border-radius  : 2em;
+                        text-transform : uppercase;
+                        font-size      : 1.2rem;
+                        text-decoration: none;
+                        width          : 66%;
+                        word-spacing   : 0.08em;
+                        letter-spacing : 0.08em;
+
+                        &:hover {
+                            background: linear-gradient(5deg, #a80101 0, #ff0101 100%);
+                        }
+                    }
+
+                    @media screen and (max-width:769px) {
+                        display: none;
+                    }
+                }
+
+
+                @media screen and (max-width:769px) {
+                    aspect-ratio: 750/800;
+                }
+            }
+
+
+            p {
+                position: absolute;
+                bottom  : 0;
+            }
+        }
+
+        .home-dot-list {
+            position       : absolute;
+            bottom         : 5%;
+            left           : 0;
+            width          : 100%;
+            height         : 5%;
+            z-index        : 10;
+            display        : none;
+            justify-content: left;
+            align-items    : center;
+
+            .home-dot-div {
+                width           : 4.5vw;
+                height          : 4.5vw;
+                background-color: white;
+                border-radius   : 50%;
+                margin-left     : 4%;
+            }
+
+            @media screen and (max-width:768px) {
+                display: flex;
+            }
+        }
+
+        .overlay-section {
+            width              : 100vw;
+            height             : 40vh;
+            position           : absolute;
+            bottom             : -2px;
+            background-image   : url("https://image.cdn.adventurecity.sofishgame.com/webh5/assets/common/line-over.png");
+            background-position: bottom;
+            background-repeat  : repeat-x;
+            background-size    : auto 100%;
+
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+
+            .link-overlay {
+                width  : 100%;
+                height : 100%;
+                display: inline-block;
+            }
+
+            .home-element-list {
+                position       : absolute;
+                bottom         : 5vh;
+                left           : 0;
+                width          : 100%;
+                z-index        : 10;
+                display        : flex;
+                justify-content: center;
+                align-items    : flex-start;
+
+                @media screen and (max-width:768px) {
+                    display: none;
+                }
+
+                .home-element-div {
+                    border-radius: 16px;
+                    width        : 9rem;
+                    margin       : 1rem;
+                    cursor       : pointer;
+
+                    .home-element-bg {
+                        border-radius    : 16px;
+                        height           : 9rem;
+                        background-size  : cover;
+                        background-repeat: no-repeat;
+                    }
+
+                    .home-element-name {
+                        font-size     : 1rem;
+                        padding-top   : 0.5em;
+                        text-align    : center;
+                        color         : #fff;
+                        letter-spacing: 0.1em;
+                        word-spacing  : 0.1em;
+                    }
+                }
+            }
+        }
+    }
+
+    .occupy-section {
+        height          : 10vh;
+        background-color: #000;
+
+        @media screen and (max-width:768px) {
+            display: none;
+        }
+
+    }
+
+
+
+    .home-games-section {
+        padding-bottom: 5vh;
+        display       : none;
+
+        @media screen and (max-width:768px) {
+            display: block;
+        }
+
+        .home-games-title {
+            text-align   : center;
+            font-size    : 3rem;
+            position     : relative;
+            padding      : 0.4em;
+            margin-bottom: 1rem;
+
+            &::after {
+                content         : "";
+                position        : absolute;
+                bottom          : 0;
+                left            : 50%;
+                transform       : translateX(-50%);
+                display         : block;
+                height          : 4px;
+                width           : 3em;
+                background-color: red;
+                border-radius   : 4px;
+            }
+        }
+
+        .home-games-list {
+            display        : flex;
+            justify-content: center;
+            align-items    : flex-start;
+            align-content  : flex-start;
+            flex-wrap      : wrap;
+
+            .home-game-div {
+                // width        : 50%;
+                text-align   : center;
+                padding      : 2rem;
+                border-radius: 16px;
+
+                .game-logo-container {
+                    width        : 36vw;
+                    aspect-ratio : 1/1;
+                    margin-bottom: 10%;
+                    border-radius: 16px;
+                    position     : relative;
+
+                    .game-logo {
+                        border-radius: 16px;
+                    }
+                }
+
+                .game-name {
+                    font-size     : 16px;
+                    color         : #000;
+                    letter-spacing: 0.05em;
+                    word-spacing  : 0.1em;
+                }
+            }
+        }
+    }
+}

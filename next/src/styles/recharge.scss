@@ -1,0 +1,702 @@
+.recharge-site {
+    width           : 100%;
+    overflow-x      : hidden;
+    overflow-y      : hidden;
+    min-height      : 77vh;
+    padding-top     : 75px;
+    font-size       : 16px;
+    background-color: #0a0a0a;
+    padding-bottom  : 15vh;
+    position        : relative;
+
+    @media screen and (max-width:768px) {
+        padding-top: 60px;
+    }
+
+    &::after {
+        content   : '';
+        position  : absolute;
+        bottom    : 0;
+        left      : 0;
+        width     : 100%;
+        height    : 10vh;
+        background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(73, 73, 73, 0.9) 40%, rgba(0, 0, 0));
+        z-index   : 0;
+        filter    : blur(1px);
+
+    }
+
+    .recharge-bg-section {
+        width              : 90%;
+        margin             : auto;
+        aspect-ratio       : 1584/421;
+        background-repeat  : no-repeat;
+        background-position: center;
+        background-size    : cover;
+        margin-bottom      : 1px;
+        border-radius      : 16px;
+        position           : relative;
+
+        &::before {
+            content       : '';
+            position      : absolute;
+            top           : 0;
+            left          : 0;
+            width         : 100%;
+            height        : 100%;
+            box-shadow    : inset 0 0 1.6rem rgba(255, 255, 255, 0.9);
+            border-radius : 16px;
+            z-index       : 22;
+            pointer-events: none;
+        }
+
+        @media screen and (max-width:768px) {
+            width       : 96%;
+            aspect-ratio: 718/304;
+        }
+    }
+
+    .recharge-section {
+        width : 90%;
+        margin: auto;
+
+        @media screen and (max-width:768px) {
+            width: 96%;
+        }
+
+        .select-game-container {
+            width    : 100%;
+            margin   : 3vh auto;
+            font-size: 1rem;
+
+            .select-game-div {
+                background-color          : #fff;
+                width                     : 100%;
+                min-height                : 13vh;
+                border-top-right-radius   : 10px;
+                border-bottom-left-radius : 10px;
+                border-bottom-right-radius: 10px;
+                display                   : flex;
+                justify-content           : space-around;
+                align-items               : center;
+                align-content             : space-between;
+                padding                   : 2%;
+                flex-wrap                 : wrap;
+                position                  : relative;
+
+                @media screen and (max-width:768px) {
+                    padding        : 4% 2%;
+                    justify-content: flex-end;
+
+                }
+
+                .game-logo-img {
+                    height          : 8vh;
+                    width           : auto;
+                    border-radius   : 1rem;
+                    // margin-right : 2%;
+
+                    @media screen and (max-width:768px) {
+                        width   : 20%;
+                        height  : auto;
+                        position: absolute;
+                        left    : 2%;
+                        top     : 8%;
+                    }
+                }
+
+
+
+                .server-label {
+                    width          : 30%;
+                    text-align     : center;
+                    display        : flex;
+                    justify-content: center;
+                    align-items    : center;
+                    padding-left   : 1.5%;
+
+                    @media screen and (max-width:768px) {
+                        margin-top     : 5%;
+                        min-width      : 78%;
+                        justify-content: flex-end;
+                    }
+
+                    .label-span {
+                        font-size   : 1.4em;
+                        margin-right: 0.5em;
+                        width       : 5em;
+                        text-align  : right;
+                    }
+
+                    .custom-select-container {
+                        flex     : 1;
+                        font-size: 1rem;
+                        min-width: 10em;
+
+                        @media screen and (max-width:768px) {
+                            flex     : 1;
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+
+        .select-goods-container {
+            width    : 100%;
+            margin   : 3vh auto;
+            font-size: 1rem;
+
+            .select-goods-div {
+                background-color          : #fff;
+                width                     : 100%;
+                min-height                : 30vh;
+                border-top-right-radius   : 10px;
+                border-bottom-left-radius : 10px;
+                border-bottom-right-radius: 10px;
+                padding                   : 2%;
+
+                @media screen and (max-width:768px) {
+                    padding: 4% 2%;
+                }
+
+
+                .goods-tabs {
+                    width    : 100%;
+                    font-size: 1.5rem;
+                    position : relative;
+
+                    .goods-tab {
+                        width             : 100%;
+                        font-size         : 1.2em;
+                        // height         : 2em;
+                        // line-height    : 2em;
+                        display           : flex;
+                        justify-content   : center;
+                        align-content     : center;
+                        letter-spacing    : 0.08em;
+                        word-spacing      : 0.08em;
+                        cursor            : pointer;
+                        padding           : 0 1% 0.6em 1%;
+
+                        h5 {
+                            width      : 30%;
+                            text-align : center;
+                            line-height: 1.2em;
+                        }
+                    }
+
+                    .goods-line {
+                        background-color: red;
+                        width           : 6em;
+                        height          : 2px;
+                        border-radius   : 6px;
+                        position        : absolute;
+                        bottom          : 0;
+                        left            : 35%;
+                        transform       : translateX(-50%);
+                        transition      : width 0.3s, left 0.3s, right 0.3s;
+                    }
+                }
+
+                .goods-container {
+                    width           : 100%;
+                    display         : flex;
+                    justify-content : left;
+                    flex-wrap       : wrap;
+                    margin-top      : 1vh;
+                    background-color: #f4f3f9;
+                    border-radius   : 1rem;
+                    padding         : 1vh 0;
+                    min-height      : 20vh;
+
+                    .top-good {
+                        font-size       : 1rem;
+                        width           : 23%;
+                        margin          : 1% 0.5%;
+                        padding         : 1%;
+                        border-radius   : 1rem;
+                        border          : 1px solid #888888;
+                        background-color: #fff;
+                        cursor          : pointer;
+
+                        @media screen and (max-width:768px) {
+                            font-size: 3vw;
+                            width    : 49%;
+                            padding  : 2%;
+                        }
+
+                        .good-info {
+                            display        : flex;
+                            justify-content: flex-start;
+                            align-items    : center;
+                            padding-bottom : 1em;
+
+                            .good-logo {
+                                width        : 30%;
+                                height       : auto;
+                                border-radius: 0.6rem;
+                            }
+
+                            .good-text {
+                                padding-left: 1%;
+
+                                .good-title {
+                                    font-size     : 1em;
+                                    font-weight   : 600;
+                                    word-spacing  : 0.08em;
+                                    letter-spacing: 0.08em;
+                                    padding-bottom: 0.5em;
+                                }
+
+                                .good-desc {
+                                    font-size: 0.8em;
+                                    color    : #444444;
+                                }
+                            }
+                        }
+
+                        .good-price-div {
+                            text-align    : right;
+                            font-size     : 1em;
+                            word-spacing  : 0.08em;
+                            letter-spacing: 0.08em;
+
+                            .good-unit {
+                                padding-right: 0.3em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .select-payment-container {
+            width        : 100%;
+            margin       : 2vh auto;
+            margin-bottom: 3vh;
+            font-size    : 1rem;
+
+
+            .goods-pay-container {
+                background-color          : #fff;
+                width                     : 100%;
+                min-height                : 30vh;
+                border-top-right-radius   : 10px;
+                border-bottom-left-radius : 10px;
+                border-bottom-right-radius: 10px;
+                padding                   : 2%;
+                position                  : relative;
+
+                @media screen and (max-width:768px) {
+                    padding: 4% 2%;
+                }
+
+                .the-more-payment-container {
+                    background-color: #fff;
+                    position        : absolute;
+                    right           : -2px;
+                    top             : -2px;
+                    width           : 50%;
+                    font-size       : 0.7em;
+                    z-index         : 67;
+                    border-radius   : 10px;
+                    border          : 1px solid #adadad;
+
+                    .payment-container {
+                        width                     : 100%;
+                        display                   : flex;
+                        flex-wrap                 : wrap;
+                        justify-content           : flex-start;
+                        background-color          : #fff;
+                        min-height                : 30%;
+                        padding                   : 1%;
+                        padding-bottom            : 5%;
+                        border-bottom-left-radius : 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+
+                }
+
+
+
+                .payment-tabs {
+                    width    : 100%;
+                    font-size: 1em;
+                    position : relative;
+
+                    .payment-tab {
+                        width          : 100%;
+                        font-size      : 1.5em;
+                        display        : flex;
+                        justify-content: flex-start;
+                        align-content  : center;
+                        letter-spacing : 0.08em;
+                        word-spacing   : 0.08em;
+                        padding-left   : 6%;
+
+                        @media screen and (max-width:768px) {
+                            padding-left: 0;
+
+                        }
+
+                        li {
+                            min-height      : 2.4em;
+                            display         : flex;
+                            justify-content : center;
+                            align-items     : center;
+                            min-width       : 18%;
+                            text-align      : center;
+                            background-color: #fff;
+                            border-top      : 1px solid #bbbbbb;
+                            border-left     : 1px solid #bbbbbb;
+                            border-right    : 1px solid #bbbbbb;
+                            margin          : 0 0.5%;
+                            cursor          : pointer;
+                            padding         : 1% 1%;
+
+                            @media screen and (max-width:768px) {
+                                min-width: 24%;
+                            }
+                        }
+
+                        .tab-active {
+                            background-color: #f3f3f3;
+                        }
+                    }
+
+                    .more-payment-tab {
+                        width          : 100%;
+                        font-size      : 1.5em;
+                        display        : flex;
+                        justify-content: flex-start;
+                        letter-spacing : 0.08em;
+                        word-spacing   : 0.08em;
+                        flex-wrap      : wrap;
+                        padding-bottom : 2vh;
+
+                        li {
+                            width           : 23%;
+                            text-align      : center;
+                            background-color: #eeeeee;
+                            margin          : 0.2em 1%;
+                            cursor          : pointer;
+                            min-height      : 2.4em;
+                            display         : flex;
+                            justify-content : center;
+                            align-items     : center;
+                            padding         : 1% 1%;
+                        }
+
+                        .tab-active {
+                            background-color: #ff6702;
+                        }
+
+                    }
+                }
+
+                .payment-container {
+                    width           : 100%;
+                    display         : flex;
+                    flex-wrap       : wrap;
+                    background-color: #f3f3f3;
+                    min-height      : 30%;
+                    padding         : 1%;
+                    padding-bottom  : 5%;
+                    justify-content : flex-start;
+
+                    @media screen and (max-width:768px) {
+                        padding       : 2%;
+                        padding-bottom: 8vh;
+                    }
+
+                    .payment-item {
+                        width    : 18%;
+                        min-width: 8em;
+                        margin   : 1%;
+                        cursor   : pointer;
+
+                        &.selected {
+                            border: 2px solid rgb(0, 89, 255);
+                        }
+
+                        @media screen and (max-width:768px) {
+                            width    : 29%;
+                            min-width: 25vw;
+                            margin   : 2%;
+                        }
+
+                        .payment-logo {
+                            width            : 100%;
+                            height           : auto;
+                            background-repeat: no-repeat;
+                            background-size  : cover;
+                        }
+                    }
+                }
+
+                .payment-end {
+                    display         : flex;
+                    justify-content : space-between;
+                    align-items     : center;
+                    font-size       : 1rem;
+                    width           : 100%;
+                    background-color: #fff;
+                    padding-top     : 4vh;
+
+                    @media screen and (max-width:768px) {
+                        padding-top   : 2vh;
+                        flex-direction: column;
+                    }
+
+                    .payment-info {
+                        font-size : 1.2rem;
+                        text-align: left;
+
+                        @media screen and (max-width:768px) {
+                            padding      : 1vh 2vw;
+                            width        : 100%;
+                            margin-bottom: 1.5vh;
+                        }
+                    }
+
+                    .payment-btn-div {
+                        border-radius  : 2em;
+                        border         : 1px solid #fa771f;
+                        width          : auto;
+                        display        : flex;
+                        justify-content: space-between;
+                        align-items    : center;
+                        font-size      : 1.4rem;
+
+                        @media screen and (max-width:768px) {
+                            width: 100%;
+                        }
+
+                        .payment-price {
+                            min-width: 8em;
+                            padding  : 0 2em 0 1em;
+
+                            .end-price {
+                                font-size     : 1em;
+                                color         : #fa771f;
+                                padding-bottom: 0.4em;
+                            }
+
+                            .show-price {
+                                font-size: 0.7em;
+                                color    : #7a7a7a;
+                            }
+                        }
+
+                        .payment-btn {
+                            background-color: #fa771f;
+                            font-size       : 1.1em;
+                            padding         : 1em 3em;
+                            border-radius   : 2em;
+                            color           : #fff;
+                            word-spacing    : 0.08em;
+                            letter-spacing  : 0.05em;
+
+                            @media screen and (max-width:768px) {
+                                flex: 1;
+                            }
+                        }
+
+                    }
+
+                    .contact-btn {
+                        background-color: #fa771f;
+                        font-size       : 1.5rem;
+                        padding         : 0.8em 3em;
+                        border-radius   : 2em;
+                        color           : #fff;
+                        word-spacing    : 0.08em;
+                        letter-spacing  : 0.05em;
+
+                        @media screen and (max-width:768px) {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+
+            .wholesale-container {
+                background-color          : #fff;
+                width                     : 100%;
+                min-height                : 40vh;
+                border-top-right-radius   : 10px;
+                border-bottom-left-radius : 10px;
+                border-bottom-right-radius: 10px;
+                padding                   : 2%;
+                position                  : relative;
+
+                @media screen and (max-width:768px) {
+                    padding: 4% 2%;
+                }
+
+                .wholesale-content {
+                    // height          : 80%;
+                    min-height      : 30vh;
+                    max-height      : 60vh;
+                    background-color: #f4f3f9;
+                    margin          : 1% 2%;
+                    border-radius   : 1rem;
+                    padding         : 1rem;
+                    overflow-y      : auto;
+                    overflow-x      : auto;
+
+
+                    @media screen and (min-width:769px) {
+                        &::-webkit-scrollbar {
+                            width : 8px;
+                            height: 8px;
+                        }
+
+                        &::-webkit-scrollbar-track {
+                            background   : transparent;
+                            margin-bottom: 16px;
+                        }
+
+                        &::-webkit-scrollbar-thumb {
+                            background   : #d3d3d3;
+                            border-radius: 16px;
+                        }
+                    }
+
+                    h1 {
+                        margin-bottom: 5em;
+                    }
+                }
+
+                .payment-end {
+                    display         : flex;
+                    justify-content : space-between;
+                    align-items     : center;
+                    font-size       : 1rem;
+                    width           : 100%;
+                    background-color: #fff;
+                    padding-top     : 4vh;
+
+                    @media screen and (max-width:768px) {
+                        padding-top   : 2vh;
+                        flex-direction: column;
+                    }
+
+                    .payment-info {
+                        font-size : 1.2rem;
+                        text-align: left;
+
+                        @media screen and (max-width:768px) {
+                            padding      : 1vh 2vw;
+                            width        : 100%;
+                            margin-bottom: 1.5vh;
+                        }
+                    }
+
+                    .contact-btn {
+                        background-color: #fa771f;
+                        font-size       : 1.5rem;
+                        padding         : 0.8em 3em;
+                        border-radius   : 2em;
+                        color           : #fff;
+                        word-spacing    : 0.08em;
+                        letter-spacing  : 0.05em;
+
+                        @media screen and (max-width:768px) {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .top-tag-container {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : flex-end;
+
+        .container-tag {
+            // min-width       : 15%;
+            // max-width       : 20%;
+            display         : inline-block;
+            height          : 4em;
+            line-height     : 4em;
+            padding-left    : 1%;
+            padding-right   : 4em;
+            background-color: #fff;
+            clip-path       : polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+
+            @media screen and (max-width:768px) {
+                // max-width: 35%;
+            }
+
+            .tag-index {
+                display         : inline-block;
+                width           : 2em;
+                height          : 2em;
+                line-height     : 2em;
+                text-align      : center;
+                border-radius   : 50%;
+                background-color: rgb(245, 15, 15);
+                color           : #fff;
+                margin-right    : 0.5em;
+
+            }
+
+            .tag-title {
+                font-size     : 1.4em;
+                vertical-align: middle;
+            }
+        }
+
+        .container-tips {
+            max-width     : 45%;
+            padding-bottom: 0.5em;
+            color         : #fff;
+            display       : inline-block;
+            font-size     : 1rem;
+            text-align    : right;
+            text-indent   : 1em;
+
+            @media screen and (max-width:768px) {
+                max-width: 50%;
+
+                &.more-pay-tips {
+                    font-size: 13px;
+                }
+            }
+
+            .tip-link {
+                color : rgb(255, 6, 6);
+                cursor: pointer;
+
+                @media screen and (max-width:768px) {
+                    display: block;
+                }
+            }
+        }
+    }
+
+
+    .top-up-protocol {
+        width           : 100%;
+        margin          : 2vh auto;
+        font-size       : 1rem;
+        min-height      : 20vh;
+        background-color: #fff;
+        border-radius   : 1rem;
+        padding         : 2% 4%;
+        color           : #444444;
+
+        @media screen and (max-width:768px) {
+            font-size: 1.4rem;
+            padding  : 4%;
+        }
+    }
+}

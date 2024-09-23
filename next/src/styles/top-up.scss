@@ -1,0 +1,93 @@
+.top-up-site {
+    width     : 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-height: 77vh;
+    font-size : 16px;
+
+    .top-up-bg-section {
+        width              : 100vw;
+        aspect-ratio       : 1920/698;
+        min-height         : 555px;
+        background-repeat  : no-repeat;
+        background-position: center;
+        background-size    : cover;
+        margin-bottom      : 1px;
+
+        @media screen and (max-width:768px) {
+            min-height  : 50vh;
+            aspect-ratio: 750/833;
+        }
+    }
+
+    .top-up-games-section {
+        padding   : 5vh 8vw;
+        min-height: 60vh;
+
+        .top-up-games-title-container {
+
+            font-size: 1rem;
+
+            .top-up-games-title {
+                font-size   : 2em;
+                margin-right: 0.5em;
+            }
+
+            .top-up-games-title-desc {
+                font-size: 1em;
+                color    : #727272;
+            }
+        }
+
+
+        .top-up-games-container {
+            padding        : 2vh 0;
+            width          : 100%;
+            display        : flex;
+            justify-content: space-between;
+            flex-wrap      : wrap;
+
+            .top-up-game {
+                border-radius  : 16px;
+                padding        : 2%;
+                display        : flex;
+                justify-content: flex-start;
+                align-items    : center;
+                width          : 25%;
+
+                @media screen and (max-width:768px) {
+                    width         : 33%;
+                    flex-direction: column;
+                    margin-bottom : 1vh;
+                }
+
+                .game-logo-img {
+                    border-radius: 1rem;
+                    width        : 8vw;
+                    height       : auto;
+
+                    @media screen and (max-width:768px) {
+                        width        : 80%;
+                        margin-bottom: 1vh;
+                    }
+                }
+
+                .game-name {
+                    margin-left   : 1rem;
+                    font-size     : 1.2rem;
+                    flex          : 1;
+                    line-height   : 1.5rem;
+                    color         : black;
+                    letter-spacing: 0.03em;
+                    word-spacing  : 0.05em;
+
+
+                    @media screen and (max-width:768px) {
+                        margin-left: 0;
+                        text-align : center;
+                    }
+                }
+            }
+        }
+    }
+}

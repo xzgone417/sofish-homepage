@@ -1,0 +1,237 @@
+.my-gift-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width     : 100%;
+    height    : 100%;
+
+
+
+    @media screen and (min-width:769px) {
+        &::-webkit-scrollbar {
+            width : 8px;
+            height: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background   : transparent;
+            margin-bottom: 16px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background   : #d3d3d3;
+            border-radius: 16px;
+        }
+    }
+
+
+    .my-gift-li {
+        margin         : 2% 10%;
+        width          : 80%;
+        height         : 20%;
+        border         : 1px solid #d3d3d3;
+        border-radius  : 1rem;
+        display        : flex;
+        justify-content: flex-start;
+        align-items    : center;
+        padding        : 0 1.5% 0 1.25%;
+        color          : black;
+
+        @media screen and (max-width:768px) {
+            height          : 12vh;
+            background-color: #f1f1f1;
+            width           : 84%;
+            margin          : 2vh 8%;
+            padding         : 1% 2%;
+        }
+
+        .gift-avatar {
+            height       : 80%;
+            width        : auto;
+            border-radius: 12px;
+            margin-right : 3%;
+        }
+
+        .gift-info {
+            letter-spacing: 0.05em;
+            word-spacing  : 0.08em;
+
+
+            .gift-name {
+                padding-bottom: 1rem;
+                font-size     : 1.1rem;
+
+                @media screen and (max-width:768px) {
+                    font-size: 3.6vw;
+                }
+            }
+
+            .gift-span {
+                margin-left: 1.4em;
+                color      : #afafaf;
+                font-size  : 0.9rem;
+
+                @media screen and (max-width:768px) {
+                    font-size: 2.8vw;
+                    color    : #252525
+                }
+            }
+
+            .gift-code {
+                font-size: 0.9rem;
+            }
+        }
+
+        .copy-btn-div {
+            flex   : 1;
+            display: grid;
+
+            .copy-btn {
+                justify-self  : flex-end;
+                background    : red;
+                color         : white;
+                padding       : 1em 2em;
+                border        : none;
+                border-radius : 10px;
+                cursor        : pointer;
+                outline       : none;
+                transition    : all 0.3s ease;
+                word-spacing  : 0.08em;
+                letter-spacing: 0.08em;
+
+                @media screen and (max-width:768px) {
+                    font-size: 1.4rem;
+                    padding  : 1.6vh 4vw;
+                }
+            }
+
+            .copied-btn {
+                justify-self  : flex-end;
+                background    : rgb(143, 143, 143);
+                color         : white;
+                padding       : 0.8em 2em;
+                border        : none;
+                border-radius : 10px;
+                text-transform: uppercase;
+                cursor        : pointer;
+                outline       : none;
+                transition    : all 0.3s ease;
+                word-spacing  : 0.08em;
+                letter-spacing: 0.08em;
+
+                @media screen and (max-width:768px) {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+.gift-center-container {
+    width : 100%;
+    height: 100%;
+
+    .gift-center-title {
+        height         : 12%;
+        display        : flex;
+        justify-content: flex-start;
+        align-items    : center;
+        padding-left   : 6%;
+
+
+        @media screen and (max-width:768px) {
+            min-height    : 3vh;
+            padding-bottom: 2vh;
+        }
+
+        p {
+            font-size     : 1.4rem;
+            letter-spacing: 0.04em;
+            word-spacing  : 0.08em;
+
+            @media screen and (max-width:768px) {
+                font-size: 5vw;
+            }
+
+            .center-title {
+                font-weight: 500;
+                cursor     : pointer;
+            }
+
+            .separation {
+                margin-left : 0.3em;
+                margin-right: 0.3em;
+                font-weight : 400;
+            }
+
+            .game-title {
+                cursor     : pointer;
+                font-size  : 0.8em;
+                font-weight: 400;
+            }
+        }
+    }
+
+
+    .game-gift-ul {
+        overflow-y     : auto;
+        overflow-x     : hidden;
+        width          : 100%;
+        height         : 88%;
+        display        : flex;
+        justify-content: space-evenly;
+        flex-wrap      : wrap;
+        align-content  : flex-start;
+
+        @media screen and (max-width:768px) {
+            padding-top: 5%;
+        }
+
+        @media screen and (min-width:769px) {
+            &::-webkit-scrollbar {
+                width : 8px;
+                height: 8px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background   : transparent;
+                margin-bottom: 16px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background   : #d3d3d3;
+                border-radius: 16px;
+            }
+        }
+
+
+        .game-gift-li {
+            margin       : 2% 5%;
+            width        : 12%;
+            border-radius: 16px;
+            cursor       : pointer;
+            min-width    : 90px;
+
+            @media screen and (max-width:768px) {
+                margin: 2% 1%;
+                width : 24%;
+            }
+
+            .game-avatar {
+                width        : 100%;
+                height       : auto;
+                border-radius: 16px;
+            }
+
+            p {
+                letter-spacing: 0.05em;
+                word-spacing  : 0.08em;
+                text-align    : center;
+                padding-top   : 0.6em;
+
+                @media screen and (max-width:768px) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
